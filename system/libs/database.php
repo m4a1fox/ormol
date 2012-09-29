@@ -2,11 +2,10 @@
 class Database extends PDO{
 	public function __construct($dbdriver, $hostname, $dbname, $username, $password, $char_set){
     	try{
-    	parent::__construct($dbdriver . "::host=". $hostname ."; dbname=".$dbname, $username, $password,array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES '.$char_set));
-        parent::setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            parent::__construct($dbdriver . "::host=". $hostname ."; dbname=".$dbname, $username, $password,array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES '.$char_set));
+            parent::setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         }catch(PDOException $e){
-            exception_handler($e, 'Ошибка подключения к БД');
-            exit();
+            M4A1_Exception::pdo_error($e, 'Ошибка подключения к БД');
         }
     }
     

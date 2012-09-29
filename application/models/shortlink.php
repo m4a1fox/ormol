@@ -1,5 +1,5 @@
 <?php 
-    class shortlink extends Controller{
+    class Shortlink extends Controller{
         
         public static $link;
         
@@ -10,7 +10,7 @@
         }   
         
         public static function allLink(){
-            new shortlink();
+            new self();
             return self::$link;
         }  
     }

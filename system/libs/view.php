@@ -25,7 +25,7 @@ class View{
     
     
 	public function render($name, $data=array(), $noInclude = false){
-        extract($data);
+            extract($data);
 		if($noInclude){
                         require M4A1_VIEWS . $name . '.php';
 		}else{

@@ -58,8 +58,7 @@ class Controller{
                         require M4A1_VIEWS . 'footer.php';
                 }
             }else{
-                M4A1_Exception::php_error(new Exception('View is not exists'), viewIsNotExistInClass($file));
-                exit();
+                M4A1_Exception::exception_error(new Exception('View is not exists', '4002'), viewIsNotExistInClass($file));
             }
 	}
   
@@ -88,8 +87,7 @@ class Controller{
             if(file_exists($file)){
                 $this->$name = new $name();
             }else{
-                exception_handler(new Exception('Такой модели не существует: <strong>'.$name.'</strong>'), viewIsNotExistInClass($file));
-                exit();
+                M4A1_Exception::exception_error(new Exception('Такой модели не существует: <strong>'.$name.'</strong>', '4001'), viewIsNotExistInClass($file));
             }    
     }
 }

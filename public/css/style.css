@@ -250,13 +250,13 @@ hr{
 
 
 #search_block{
-    margin: 7px auto;
+    margin: 3px 0 0 0;
     float:left;
     display: inline-block
 }
 
 #search_block input[type=text]{
-    padding: 5px;
+    padding: 5px 25px 5px 5px;
     width: 250px;
     border: 1px solid silver;
     /*border-radius: 5px;*/
@@ -364,7 +364,6 @@ hr{
 	position:absolute;
 	display: none;
 	z-index: 2000;
-	padding-top:13px;
 	margin-left:-13px;
 	background-color:white;
 }
@@ -1236,3 +1235,25 @@ a:hover.greenbutton{
 	font-size:15pt;
 }
 
+#scrolltab{
+	width:40px;
+	height:40px;
+	position:fixed;
+	top:50%;
+	right:10px;
+	margin-top:-20px;
+	background-color:black;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=50);
+	-moz-opacity:0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+	border: 1px solid grey;
+	border-radius:4px;
+	z-index:2000;
+	display:none;
+	background-image: url(../img/scrolltop.png);
+	background-repeat: no-repeat;
+	background-position: 0px 1px;
+	cursor:pointer;
+}

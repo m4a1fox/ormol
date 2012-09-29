@@ -35,7 +35,7 @@
                 <!-- End contact info area -->
                 <div id="search_block">
                     <form action="<?php echo M4A1_HOST;?>search" method="post" id="search-form">
-                        <input type="text" placeholder="Search" name="search">
+                        <input type="text" placeholder="Search" name="search" maxlength="50">
                         <input type="reset" name="search" id="searchBtn" value="X">
                         <input type="submit" name="send" id="searchBtn" value="">
                     </form>
@@ -50,7 +50,7 @@
                         <li><a href="#" title="Response Features">Features</a>
                         	<ul>
                                     <li><a href="left-blog-post.html" title="Left Column Blog Post">structure</a></li>
-                                    <?php $link = shortlink::allLink();?>
+                                    <?php $link = Shortlink::allLink();?>
                                     <?php foreach ($link as $value):?>
                                         <li>
                                             <a href="<?php echo M4A1_HOST;?>content/show/<?php echo $value->link;?>">

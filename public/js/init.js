@@ -1,7 +1,7 @@
 $(document).ready(function(){
     //// navigation motions ////
     $("#navi li").has("ul").hover(function(){
-        $(this).addClass("current").children("ul").fadeIn('3000');
+        $(this).addClass("current").children("ul").fadeIn('3000').css({'margin-top': '14px'});
     }, function() {
         $(this).removeClass("current").children("ul").stop(true, true).fadeOut('3000');
     });
@@ -23,7 +23,6 @@ $(document).ready(function(){
             }
         });
 
-
     $(search_btn).click(function(){
         $(this).val();
         $(search_btn).css({'visibility': 'hidden', 'cursor': 'pointer'});
@@ -39,6 +38,24 @@ $(document).ready(function(){
     $("code").css({'width': codeWidth, 'height': codeHeight, 'position': 'absolute'});
 //    $("#chat-bubble").infoBar();
 //    $("#chat-bubble-two").infoBar();
+
+
+//// Start Scroll Top Function //// 
+	$(window).bind('scroll', function(){
+		if($(this).scrollTop() > 200) {
+		$("#scrolltab").fadeIn('3000');
+		}
+		if($(this).scrollTop() < 199){
+			$("#scrolltab").fadeOut('3000');
+		}
+	});
+	
+	$('#scrolltab').live('click', function(){
+		$("html, body").animate({scrollTop:0}, 'slow');
+	});
+	//// End Scroll Top Function ////
+
+
 });
 
 

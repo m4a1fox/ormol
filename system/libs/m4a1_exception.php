@@ -21,15 +21,17 @@ class M4A1_Exception{
    
    
     public static function php_error_variable($code = 0, $message, $file = '', $line = 0){
-        $info = ( ! isset(self::$levels[$code])) ? $code : self::$levels[$code];    
+        $info = ( ! isset(self::$levels[$code])) ? $code : self::$levels[$code];
         include M4A1_ROOT . './system/errors/var_error.php';
     }
    
-    public static function php_error($expClass, $myMessage){
+    public static function exception_error($expClass, $myMessage){
         include M4A1_ROOT . './system/errors/exc_error.php';
+        exit;
     }
    
-    public static function exception_error($expClass, $myMessage){
+    public static function pdo_error($expClass, $myMessage){
         include M4A1_ROOT . './system/errors/pdo_error.php';
+        exit;
     }
 }

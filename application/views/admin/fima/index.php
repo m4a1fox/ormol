@@ -1,3 +1,6 @@
+<div class="titlesnormal">
+    <h1>Fima</h1><span></span>
+</div>
 <div id="fima-page">
 
 

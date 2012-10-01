@@ -1,3 +1,6 @@
+<div class="titlesnormal">
+    <h1>Edit: <?php echo $content->title;?></h1><span></span>
+</div>
 <form action="" method="post">
     <input type="hidden" name="id" value="<?php echo $content->id?>" />
     <label>Title</label><input type="text" name="title" value="<?php echo $content->title;?>" /><br />

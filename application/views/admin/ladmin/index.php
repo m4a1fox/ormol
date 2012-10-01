@@ -1,3 +1,7 @@
+<div class="titlesnormal">
+    <h1>Ladmin</h1><span></span>
+</div>
+
 <?php
     if(!Session::get('login'))
         header("Location: /");

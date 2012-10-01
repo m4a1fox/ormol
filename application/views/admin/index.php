@@ -2,6 +2,9 @@
     if(!Session::get('login'))
         header("Location: /");
 ?>
+<div class="titlesnormal">
+    <h1>Admin</h1><span></span>
+</div>
 <span id="show-article">press me to show all articles</span>
 <div id="article">
 <?php foreach ($content as $value):?>

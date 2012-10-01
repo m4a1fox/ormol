@@ -903,7 +903,7 @@ hr{
 /*************** Form Section ****************/
 /**********************************************/
 form label {display: block; float: left; width: 75px; padding: 0; margin: 9px; text-align: right;}
-form input, form select, form textarea {width: 450px; margin: 5px 0 5px 10px; border: 1px solid gray; padding: 5px;}
+form input, form select, form textarea {width: 800px; margin: 5px 0 5px 10px; border: 1px solid gray; padding: 5px;}
 form input[type=submit]{width: 70px;}
 form textarea{height: 200px;}
 #label-content{margin-right: 20px;}

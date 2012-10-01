@@ -1,3 +1,6 @@
+<div class="titlesnormal">
+    <h1>Folio</h1><span></span>
+</div>
 <span id="show-article">press me to show all articles</span>
 <div id="article">
 <?php foreach ($content as $value):?>

@@ -432,7 +432,7 @@ hr{
 #footer{
 	width:100%;
 	float:left;
-	background-image: url(../img/footer-bg.png);
+
 	min-height:380px;
 	margin-top:20px;
 }
@@ -1256,4 +1256,72 @@ a:hover.greenbutton{
 	background-repeat: no-repeat;
 	background-position: 0px 1px;
 	cursor:pointer;
+}
+
+
+
+/**********************************************/
+/*********** Slider Section ***************/
+/**********************************************/
+
+#slider-container{
+    padding: 5px;
+    background: white;
+    border: 1px solid #D5D5D5;
+}
+
+#slider-nav{
+    margin-top: 1px;
+    margin-left: 2px;
+    display: none;
+}
+
+#slider-nav button{
+    padding: 1em;
+    cursor: pointer;
+    margin: -2px;
+    height: 46px;
+    width: 46px;
+    border: 1px solid #D5D5D5;
+}
+
+#slider-nav button:first-child{
+    background: url('../img/arrows-slider.png') no-repeat white;
+    background-position: -5px -2px;
+    border-right: none;
+    height: 46px;
+    width: 45px;
+}
+
+#slider-nav button:first-child:hover{
+    background: url('../img/arrows-slider.png') no-repeat white;
+    background-position: -5px -49px;
+}
+
+#slider-nav button:last-child{
+    background: url('../img/arrows-slider.png') no-repeat white;
+    background-position: -51px -3px;
+}
+
+#slider-nav button:last-child:hover{
+    background: url('../img/arrows-slider.png') no-repeat white;
+    background-position: -51px -49px;
+}
+
+
+.slider{
+    width: inherit;
+    height: 344px;
+    overflow: scroll;
+}
+
+.slider ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 10000px;
+}
+
+.slider ul li{
+    float: left;
 }

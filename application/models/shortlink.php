@@ -10,7 +10,7 @@
         }   
         
         public static function allLink(){
-            new self();
+            new self;
             return self::$link;
         }  
     }

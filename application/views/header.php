@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="<?php echo M4A1_HOST; ?>usefull/jqueryFileTree/jqueryFileTree.css" />
     <script type="text/javascript" src="<?php echo M4A1_HOST;?>public/js/jQuery.js"></script>
     <script type="text/javascript" src="<?php echo M4A1_HOST;?>public/js/init.js"></script>
+        <script type="text/javascript" src="<?php echo M4A1_HOST;?>public/js/slider.js"></script>
     <script src="/usefull/fckeditor/fckeditor.js" type="text/javascript"></script>
     <script type="text/javascript" src="<?php echo M4A1_HOST;?>usefull/jqueryFileTree/jqueryFileTree.js"></script>
     <link href="<?php echo M4A1_HOST;?>public/img/leaf.ico" rel="icon" type="image/x-icon" />

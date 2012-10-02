@@ -133,116 +133,32 @@ hr{
 
 .social ul li a{
 	border:0px;
+        width:40px;
+	display:block;
+	height:40px;
+
+        background-repeat: no-repeat;
         
 }
 
-.social-google{
-	width:46px;
-	display:block;
-	height:46px;
-	background-image: url(../img/social-slider.png);
-	background-repeat: no-repeat;
-	background-position: -7px -1px;
-}
+.help{background-image: url(../img/help.png); background-position: 2px 4px;}
+.help:hover{background-image: url(../img/help_hover.png);}
 
-.social-google:hover{
-	width:46px;
-	display:block;
-	height:46px;
-	background-image: url(../img/social-slider.png);
-	background-repeat: no-repeat;
-	background-position: -7px -47px;
-}
+.download{background-image: url(../img/download.png); background-position: 2px 3px;}
+.download:hover{	background-image: url(../img/download_hover.png);}
 
-.social-facebook{
-	width:46px;
-	display:block;
-	height:46px;
-	background-image: url(../img/social-slider.png);
-	background-repeat: no-repeat;
-	background-position: -53px -2px;
-}
+.comment{background-image: url(../img/comment.png); background-position: 1px 5px;}
+.comment:hover{background-image: url(../img/comment_hover.png);}
 
-.social-facebook:hover{
-	width:46px;
-	display:block;
-	height:46px;
-	background-image: url(../img/social-slider.png);
-	background-repeat: no-repeat;
-	background-position: -53px -48px;
-}
+.structure{background-image: url(../img/structure.png); background-position: 3px 5px;}
+.structure:hover{background-image: url(../img/structure_hover.png);}
 
-.social-twitter{
-	width:46px;
-	display:block;
-	height:46px;
-	background-image: url(../img/social-slider.png);
-	background-repeat: no-repeat;
-	background-position: -102px -2px;
-}
+.faq{background-image: url(../img/faqs.png); background-position: 1px 2px;}
+.faq:hover{background-image: url(../img/faqs_hover.png);}
 
-.social-twitter:hover{
-	width:46px;
-	display:block;
-	height:46px;
-	background-image: url(../img/social-slider.png);
-	background-repeat: no-repeat;
-	background-position: -102px -48px;
-}
+.setting{background-image: url(../img/setting.png); background-position: 1px 2px;}
+.setting:hover{background-image: url(../img/setting_hover.png);}
 
-.social-linkedin{
-	width:46px;
-	display:block;
-	height:46px;
-	background-image: url(../img/social-slider.png);
-	background-repeat: no-repeat;
-	background-position: -147px -2px;
-}
-
-.social-linkedin:hover{
-	width:46px;
-	display:block;
-	height:46px;
-	background-image: url(../img/social-slider.png);
-	background-repeat: no-repeat;
-	background-position: -147px -48px;
-}
-
-.social-forrst{
-	width:46px;
-	display:block;
-	height:46px;
-	background-image: url(../img/social-slider.png);
-	background-repeat: no-repeat;
-	background-position: -194px -2px;
-}
-
-.social-forrst:hover{
-	width:46px;
-	display:block;
-	height:46px;
-	background-image: url(../img/social-slider.png);
-	background-repeat: no-repeat;
-	background-position: -194px -48px;
-}
-
-.social-dribbble{
-	width:46px;
-	display:block;
-	height:46px;
-	background-image: url(../img/social-slider.png);
-	background-repeat: no-repeat;
-	background-position: -242px -2px;
-}
-
-.social-dribbble:hover{
-	width:46px;
-	display:block;
-	height:46px;
-	background-image: url(../img/social-slider.png);
-	background-repeat: no-repeat;
-	background-position: -242px -48px;
-}
 
 /**********************************************/
 /************ Search Section **************/

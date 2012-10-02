@@ -52,7 +52,7 @@ Examples:
 
 ATTENTION: The trailing slash is required.
 */
-$baseUrl = '/content/data/'; //Не забыть бы поменять путь.
+$baseUrl = '/file/data/'; //Не забыть бы поменять путь.
 
 /*
 $baseDir : the path to the local directory (in the server) which points to the

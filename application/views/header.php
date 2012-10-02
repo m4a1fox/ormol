@@ -83,12 +83,12 @@
         	<div class="social">
             	
                 <ul>
-                <li><a href="#" class="social-google"></a></li>
-                <li><a href="#" class="social-facebook"></a></li>
-                <li><a href="#" class="social-twitter"></a></li>
-                <li><a href="#" class="social-linkedin"></a></li>
-                <li><a href="#" class="social-forrst"></a></li>
-                <li><a href="#" class="social-dribbble"></a></li>
+                <li><a href="<?php echo M4A1_HOST;?>help" class="help" title="FAQs"></a></li>
+                <li><a href="<?php echo M4A1_HOST;?>download" class="download" title="Dowload ORMOL"></a></li>
+                <li><a href="<?php echo M4A1_HOST;?>comment" class="comment" title="comments"></a></li>
+                <li><a href="<?php echo M4A1_HOST;?>structure" class="structure" title="structure"></a></li>
+                <li><a href="<?php echo M4A1_HOST;?>faq" class="faq" title="FAQs"></a></li>
+                <li><a href="<?php echo M4A1_HOST;?>setting" class="setting" title="Setting"></a></li>
                 </ul>
                 
             </div>

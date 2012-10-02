@@ -937,22 +937,25 @@ close:hover{cursor: pointer; color: red;}
      width: 46px;
     height: 46px;
     display: block;
+    overflow: hidden;
+    background-image: url(../img/admin-icon.png);
+    background-repeat: no-repeat;
 }
 
-.admin-admin{background: url(../img/admin_hover.png) center no-repeat;}
-.admin-admin:hover{background: url(../img/admin.png) center no-repeat;}
-.admin-fima{background: url(../img/fima_hover.png) center no-repeat;}
-.admin-fima:hover{background: url(../img/fima.png) center no-repeat;}
-.admin-ladmin{background: url(../img/link.png) center no-repeat;}
-.admin-ladmin:hover{background: url(../img/link_hover.png) center no-repeat;}
-.admin-fadmin{background: url(../img/folio_hover.png) center no-repeat;}
-.admin-fadmin:hover{background: url(../img/folio.png) center no-repeat;}
-.admin-cadmin:hover{background: url(../img/cadmin.png) center no-repeat;}
-.admin-cadmin{background: url(../img/cadmin_hover.png) center no-repeat;}
-.admin-editor{background: url(../img/editor_hover.png) center no-repeat;}
-.admin-editor:hover{background: url(../img/editor.png) center no-repeat;}
-.admin-logout:hover{background: url(../img/logout.png) center no-repeat;}
-.admin-logout{background: url(../img/logout_hover.png) center no-repeat;}
+.admin-admin{background-position: 5px -36px;}
+.admin-admin:hover{background-position: 5px 8px;}
+.admin-fima{background-position: -32px -38px;}
+.admin-fima:hover{background-position: -32px 6px;}
+.admin-ladmin{background-position: -175px -38px;}
+.admin-ladmin:hover{background-position: -175px 6px;}
+.admin-fadmin{background-position: -138px -38px;}
+.admin-fadmin:hover{background-position: -138px 6px;}
+.admin-cadmin{background-position: -102px -38px;}
+.admin-cadmin:hover{background-position: -102px 6px;}
+.admin-editor{background-position: -65px -38px;}
+.admin-editor:hover{background-position: -65px 6px;}
+.admin-logout{background-position: -211px -38px;}
+.admin-logout:hover{background-position: -211px 6px;}
 
 .smallrectange {
 padding: 6px 12px;

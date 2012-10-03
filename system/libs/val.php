@@ -17,8 +17,8 @@ class Val{
             return "Your string must be a digit";
     }
 
-    public function required($data){
+    public function required($data, $arg){
         if(!$data)
-            return "The $data string is required";
+            return "The $arg is required";
     }
 }

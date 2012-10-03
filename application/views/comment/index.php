@@ -12,18 +12,27 @@
 <div class="blogcomment">
     <div class="blogwcommentwrap2">
         <div class="blogcommentform">
-            <form action="#" method="post" enctype="multipart/form-data" name="comment">
+            <form action="" method="post" enctype="multipart/form-data" name="comment">
                 <fieldset>
-                    <input type="text" name="name" placeholder="Имя">
+                    <input type="text" name="name" placeholder="Имя" />
+                    <input type="hidden" name="date" value="<?php echo date("Y-m-d");?>" />
+                    <span id="error"><?php echo isset($name) ? $name : NULL;?></span>
                 </fieldset>
                 <fieldset>
                     <textarea name="comment" cols="5" rows="5" placeholder="Текст"></textarea>
+                    <span id="error"><?php echo isset($comment) ? $comment : NULL;?></span>
+                </fieldset>
+                <fieldset>
+                    <img src="<?php echo M4A1_HOST?>usefull/captcha" style="float: left;">
+                    <input type="text" name="captcha" value="" placeholder="code" style="width: 100px;" />
+                    
                 </fieldset>
                 <fieldset class="commentbutton_fieldset">
-                    <input name="Submit" type="submit" value="Submit" class="commentbutton">
+                    <input name="submit" type="submit" value="Submit" class="commentbutton">
                 </fieldset>
             </form>
         </div>
         <span class="box-arrow"></span>
     </div>
 </div>
+

@@ -60,8 +60,10 @@ class Form{
         else
             $error = $this->_val->{$typeOfValidate}($this->_postData[$this->_currentItem], $arg);
         
-    if($error)
+    if($error){
+            $this->_error['error'] = 1;
             $this->_error[$this->_currentItem] = $error;
+    }
         return $this;
     }
     

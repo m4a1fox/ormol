@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+include '../../system/libs/session.php';
 class Captcha{
 
     private     $imgBgRed;
@@ -50,7 +50,7 @@ class Captcha{
         for ($i = 0; $i < 5; $i++) {
             $this->captcha .= chr(rand(97, 122));
         }
-        $_SESSION['captcha'] = $this->captcha;
+        Session::set('captcha', $this->captcha);
         return $this->captcha;
     }
     
@@ -71,9 +71,9 @@ class Captcha{
     }
     
     function createImgText() {
-        return imagettftext($this->image, 30, 10, 20, 50, $this->color, $this->font, $this->char());
+        return imagettftext($this->image, 20, 10, 20, 30, $this->color, $this->font, $this->char());
     }
 }
 
-$a = new Captcha(170, 60, 'font/MammaGamma.ttf', array("R" => 255, "G" => 255, "B" => 255),  array("R" => 65, "G" => 10, "B" => 10));
+$a = new Captcha(80, 40, 'font/MammaGamma.ttf', array("R" => 255, "G" => 255, "B" => 255),  array("R" => 65, "G" => 10, "B" => 10));
 $a->echoImg();

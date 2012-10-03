@@ -819,8 +819,8 @@ hr{
 /*************** Form Section ****************/
 /**********************************************/
 form label {display: block; float: left; width: 75px; padding: 0; margin: 9px; text-align: right;}
-form input, form select, form textarea {width: 800px; margin: 5px 0 5px 10px; border: 1px solid gray; padding: 5px;}
-form input[type=submit]{width: 70px;}
+form input[type=text], form select, form textarea {width: 800px; margin: 5px 0 5px 10px; border: 1px solid gray; padding: 5px;}
+/*form input[type=submit]{width: 70px;}*/
 form textarea{height: 200px;}
 #label-content{margin-right: 20px;}
 form [type=date], [type=time]{width: 137px;}
@@ -838,6 +838,7 @@ a[type="edit"]{font-weight: bold; color: green;}
 #infoRight{min-width: 300px;}
 
 #file{width: 690px; height: 600px; padding: 5px 0 0 5px; display: none;}
+
 
 .save{text-align: right; clear: none;}
 save, close{visibility: hidden;}
@@ -1379,22 +1380,32 @@ a:hover.greenbutton{
 	float:left;
 }
 
+
+span#error{
+    height: 15px;
+    padding: 0 0 0 8px;
+    display: block;
+    color: red;
+    font-size: 11px;
+    position: inherit;
+}
+
 .blogcommentform fieldset{
-	padding:10px;
+	padding:10px 10px 0 10px;
 	margin:0px;
-	border:0px;
+	border: none;
 }
 
 .blogcommentform fieldset input[type=text]{
-        width: 95%;
+	width: 440px;
     	font-size:10pt;
 	color: #AFADAD;
     	border:1px solid #d5d5d5;
 }
 
 .blogcommentform fieldset textarea{
-	width:95%;
-	padding:1%;
+	width: 440px;
+
 	border:1px solid #d5d5d5;
 	height:120px;
 	overflow:hidden;
@@ -1412,7 +1423,7 @@ a:hover.greenbutton{
 	background-color:#dbdada;
 	float:right;
 	text-align:right;
-	margin-right:10px;
+	margin:0 15px 10px 0;
 }
 
 .commentbutton:hover{

@@ -2875,3 +2875,39 @@
 [Tue Oct 02 19:04:41 2012] [error] [client 127.0.0.1] PHP   3. CKFinder_Connector_CommandHandler_QuickUpload->sendResponse() /home/maxim/workspace/ormol/usefull/fckeditor/editor/ckfinder/core/connector/php/php5/Core/Connector.php:73, referer: http://ormol.local/usefull/fckeditor/editor/dialog/fck_image.html
 [Tue Oct 02 19:04:41 2012] [error] [client 127.0.0.1] PHP   4. CKFinder_Connector_CommandHandler_FileUpload->sendResponse() /home/maxim/workspace/ormol/usefull/fckeditor/editor/ckfinder/core/connector/php/php5/CommandHandler/QuickUpload.php:47, referer: http://ormol.local/usefull/fckeditor/editor/dialog/fck_image.html
 [Tue Oct 02 19:04:41 2012] [error] [client 127.0.0.1] PHP   5. move_uploaded_file() /home/maxim/workspace/ormol/usefull/fckeditor/editor/ckfinder/core/connector/php/php5/CommandHandler/FileUpload.php:144, referer: http://ormol.local/usefull/fckeditor/editor/dialog/fck_image.html
+[Wed Oct 03 15:06:17 2012] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting ',' or ';' in /home/maxim/workspace/ormol/application/views/comment/index.php on line 22, referer: http://ormol.local/comment
+[Wed Oct 03 15:06:17 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://ormol.local/comment
+[Wed Oct 03 15:06:17 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/ormol/index.php:0, referer: http://ormol.local/comment
+[Wed Oct 03 15:06:17 2012] [error] [client 127.0.0.1] PHP   2. Bootstrap->__construct() /home/maxim/workspace/ormol/index.php:33, referer: http://ormol.local/comment
+[Wed Oct 03 15:06:17 2012] [error] [client 127.0.0.1] PHP   3. Comment->Index() /home/maxim/workspace/ormol/system/libs/bootstrap.php:50, referer: http://ormol.local/comment
+[Wed Oct 03 15:06:17 2012] [error] [client 127.0.0.1] PHP   4. Controller->view() /home/maxim/workspace/ormol/application/controllers/comment.php:26, referer: http://ormol.local/comment
+[Wed Oct 03 19:06:34 2012] [error] [client 127.0.0.1] PHP Fatal error:  Class 'Session' not found in /home/maxim/workspace/ormol/usefull/captcha/index.php on line 53, referer: http://ormol.local/comment
+[Wed Oct 03 19:06:34 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://ormol.local/comment
+[Wed Oct 03 19:06:34 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/ormol/usefull/captcha/index.php:0, referer: http://ormol.local/comment
+[Wed Oct 03 19:06:34 2012] [error] [client 127.0.0.1] PHP   2. Captcha->__construct() /home/maxim/workspace/ormol/usefull/captcha/index.php:78, referer: http://ormol.local/comment
+[Wed Oct 03 19:06:34 2012] [error] [client 127.0.0.1] PHP   3. Captcha->createImgText() /home/maxim/workspace/ormol/usefull/captcha/index.php:41, referer: http://ormol.local/comment
+[Wed Oct 03 19:06:34 2012] [error] [client 127.0.0.1] PHP   4. Captcha->char() /home/maxim/workspace/ormol/usefull/captcha/index.php:74, referer: http://ormol.local/comment
+[Wed Oct 03 19:06:44 2012] [error] [client 127.0.0.1] PHP Fatal error:  Class 'Session' not found in /home/maxim/workspace/ormol/usefull/captcha/index.php on line 53, referer: http://ormol.local/comment
+[Wed Oct 03 19:06:44 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://ormol.local/comment
+[Wed Oct 03 19:06:44 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/ormol/usefull/captcha/index.php:0, referer: http://ormol.local/comment
+[Wed Oct 03 19:06:44 2012] [error] [client 127.0.0.1] PHP   2. Captcha->__construct() /home/maxim/workspace/ormol/usefull/captcha/index.php:78, referer: http://ormol.local/comment
+[Wed Oct 03 19:06:44 2012] [error] [client 127.0.0.1] PHP   3. Captcha->createImgText() /home/maxim/workspace/ormol/usefull/captcha/index.php:41, referer: http://ormol.local/comment
+[Wed Oct 03 19:06:44 2012] [error] [client 127.0.0.1] PHP   4. Captcha->char() /home/maxim/workspace/ormol/usefull/captcha/index.php:74, referer: http://ormol.local/comment
+[Wed Oct 03 19:07:18 2012] [error] [client 127.0.0.1] PHP Fatal error:  Class 'Session' not found in /home/maxim/workspace/ormol/usefull/captcha/index.php on line 53, referer: http://ormol.local/comment
+[Wed Oct 03 19:07:18 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://ormol.local/comment
+[Wed Oct 03 19:07:18 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/ormol/usefull/captcha/index.php:0, referer: http://ormol.local/comment
+[Wed Oct 03 19:07:18 2012] [error] [client 127.0.0.1] PHP   2. Captcha->__construct() /home/maxim/workspace/ormol/usefull/captcha/index.php:79, referer: http://ormol.local/comment
+[Wed Oct 03 19:07:18 2012] [error] [client 127.0.0.1] PHP   3. Captcha->createImgText() /home/maxim/workspace/ormol/usefull/captcha/index.php:41, referer: http://ormol.local/comment
+[Wed Oct 03 19:07:18 2012] [error] [client 127.0.0.1] PHP   4. Captcha->char() /home/maxim/workspace/ormol/usefull/captcha/index.php:75, referer: http://ormol.local/comment
+[Wed Oct 03 19:08:11 2012] [error] [client 127.0.0.1] PHP Fatal error:  Class 'Session' not found in /home/maxim/workspace/ormol/usefull/captcha/index.php on line 54, referer: http://ormol.local/comment
+[Wed Oct 03 19:08:11 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://ormol.local/comment
+[Wed Oct 03 19:08:11 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/ormol/usefull/captcha/index.php:0, referer: http://ormol.local/comment
+[Wed Oct 03 19:08:11 2012] [error] [client 127.0.0.1] PHP   2. Captcha->__construct() /home/maxim/workspace/ormol/usefull/captcha/index.php:85, referer: http://ormol.local/comment
+[Wed Oct 03 19:08:11 2012] [error] [client 127.0.0.1] PHP   3. Captcha->createImgText() /home/maxim/workspace/ormol/usefull/captcha/index.php:41, referer: http://ormol.local/comment
+[Wed Oct 03 19:08:11 2012] [error] [client 127.0.0.1] PHP   4. Captcha->char() /home/maxim/workspace/ormol/usefull/captcha/index.php:81, referer: http://ormol.local/comment
+[Wed Oct 03 19:12:19 2012] [error] [client 127.0.0.1] PHP Fatal error:  Class 'Session' not found in /home/maxim/workspace/ormol/usefull/captcha/index.php on line 79, referer: http://ormol.local/comment
+[Wed Oct 03 19:12:19 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://ormol.local/comment
+[Wed Oct 03 19:12:19 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/ormol/usefull/captcha/index.php:0, referer: http://ormol.local/comment
+[Wed Oct 03 19:13:19 2012] [error] [client 127.0.0.1] PHP Fatal error:  Class 'Session' not found in /home/maxim/workspace/ormol/usefull/captcha/index.php on line 79
+[Wed Oct 03 19:13:19 2012] [error] [client 127.0.0.1] PHP Stack trace:
+[Wed Oct 03 19:13:19 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/ormol/usefull/captcha/index.php:0

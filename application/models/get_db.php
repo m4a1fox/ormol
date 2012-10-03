@@ -13,7 +13,6 @@
             return $this->db->insert($table, $data);
         }
         
-        
         function insert2($data, $table='user'){
             return $this->db->insertMulti($table, $data);
         }

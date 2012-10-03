@@ -15,11 +15,11 @@ class Bootstrap{
         
         
         if(empty($url[0])){
-            //include './controllers/index.php';
             $controller = new Index();
             $controller->index();
             return false;
         }
+        
         $fileName = $url[0];
         
         $filePath = $this->getFilePath($fileName);

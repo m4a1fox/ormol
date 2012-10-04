@@ -36,7 +36,9 @@
                                ->val('required', 'name')
                                ->post('comment')
                                ->val('required', 'comment')
-                               ->post('date');
+                               ->post('date')
+                                ->post('captcha')
+                                ->val('required', 'captcha');
             
             $data = $data->submit() == 1 ? $data->fetch() : $data->submit();
 

@@ -25,7 +25,7 @@
                 <fieldset>
                     <img src="<?php echo M4A1_HOST?>usefull/captcha" style="float: left;">
                     <input type="text" name="captcha" value="" placeholder="code" style="width: 100px;" />
-                    
+                    <span id="error"><?php echo isset($captcha) ? $captcha: NULL;?></span>
                 </fieldset>
                 <fieldset class="commentbutton_fieldset">
                     <input name="submit" type="submit" value="Submit" class="commentbutton">

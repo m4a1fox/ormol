@@ -13,14 +13,16 @@
             
             if(isset($_POST['submit'])){
                 $ret = $this->add();
-            
-            
                 if(isset($ret['error'])){
                     foreach ($ret as $key => $value) {
                         $data[$key] = $value;
                     }
                 }else{
-                    $this->get_db->insert1($ret, 'comment');
+                    $this->get_db->insert1(array(
+                        'name' => $ret['name'],
+                        'comment' => $ret['comment'],
+                        'date' => $ret['date']),
+                            'comment');
                 }
             }
             
@@ -37,8 +39,8 @@
                                ->post('comment')
                                ->val('required', 'comment')
                                ->post('date')
-                                ->post('captcha')
-                                ->val('required', 'captcha');
+                               ->post('captcha')
+                               ->val('captcha');
             
             $data = $data->submit() == 1 ? $data->fetch() : $data->submit();
 

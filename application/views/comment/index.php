@@ -36,3 +36,29 @@
     </div>
 </div>
 
+
+
+
+<?php
+
+    function getFilePath($folder){
+        $fullPath = NULL;
+        
+        $dir = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($folder), TRUE);
+        while($dir->valid()) {
+
+                $fullPath[] = $dir->key();
+            
+            $dir->next();
+        }
+        return $fullPath;
+    }
+    
+    echo '<pre>'.print_r(getFilePath('./file/'), 1).'</pre>';
+
+
+    
+    echo '<pre>'.print_r(glob('./file/*.png'), 1).'</pre>';
+    echo '<pre>'.print_r(glob('./file/*.png'), 1).'</pre>';
+
+?>

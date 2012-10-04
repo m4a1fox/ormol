@@ -75,5 +75,21 @@ class Captcha{
     }
 }
 
-$a = new Captcha(80, 40, 'font/MammaGamma.ttf', array("R" => 255, "G" => 255, "B" => 255),  array("R" => 65, "G" => 10, "B" => 10));
+function getFilePath($folder){
+    $fullPath = NULL;
+        
+    $dir = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($folder), TRUE);
+    while($dir->valid()) {
+        if (!$dir->isDot()){
+            $fullPath[] = $dir->key();
+        }
+        $dir->next();
+    }
+        return $fullPath;
+}
+    
+$font = getFilePath('font/');
+
+
+$a = new Captcha(100, 40, $font[rand(0, count($font))], array("R" => 255, "G" => 255, "B" => 255),  array("R" => 65, "G" => 10, "B" => 10));
 $a->echoImg();

@@ -21,4 +21,9 @@ class Val{
         if(!$data)
             return "The $arg is required";
     }
+    
+    public function captcha($data){
+        if($data !== Session::get('captcha'))
+            return 'The code is wrong';
+    }
 }

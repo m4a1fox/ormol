@@ -3151,3 +3151,197 @@
 [Thu Oct 04 18:46:14 2012] [error] [client 127.0.0.1] PHP   2. Captcha->__construct() /home/maxim/workspace/ormol/usefull/captcha/index.php:94, referer: http://ormol.local/comment
 [Thu Oct 04 18:46:14 2012] [error] [client 127.0.0.1] PHP   3. Captcha->createImgText() /home/maxim/workspace/ormol/usefull/captcha/index.php:41, referer: http://ormol.local/comment
 [Thu Oct 04 18:46:14 2012] [error] [client 127.0.0.1] PHP   4. imagettftext() /home/maxim/workspace/ormol/usefull/captcha/index.php:74, referer: http://ormol.local/comment
+[Fri Oct 05 12:41:31 2012] [error] [client 127.0.0.1] PHP Fatal error:  Call to undefined function blob() in /home/maxim/workspace/ormol/usefull/captcha/index.php on line 91
+[Fri Oct 05 12:41:31 2012] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 05 12:41:31 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/ormol/usefull/captcha/index.php:0
+[Fri Oct 05 12:41:55 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined offset: 12 in /home/maxim/workspace/ormol/usefull/captcha/index.php on line 95
+[Fri Oct 05 12:41:55 2012] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 05 12:41:55 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/ormol/usefull/captcha/index.php:0
+[Fri Oct 05 12:41:55 2012] [error] [client 127.0.0.1] PHP Warning:  imagettftext(): Could not find/open font in /home/maxim/workspace/ormol/usefull/captcha/index.php on line 74
+[Fri Oct 05 12:41:55 2012] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 05 12:41:55 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/ormol/usefull/captcha/index.php:0
+[Fri Oct 05 12:41:55 2012] [error] [client 127.0.0.1] PHP   2. Captcha->__construct() /home/maxim/workspace/ormol/usefull/captcha/index.php:95
+[Fri Oct 05 12:41:55 2012] [error] [client 127.0.0.1] PHP   3. Captcha->createImgText() /home/maxim/workspace/ormol/usefull/captcha/index.php:41
+[Fri Oct 05 12:41:55 2012] [error] [client 127.0.0.1] PHP   4. imagettftext() /home/maxim/workspace/ormol/usefull/captcha/index.php:74
+[Fri Oct 05 12:43:26 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined offset: 12 in /home/maxim/workspace/ormol/usefull/captcha/index.php on line 92
+[Fri Oct 05 12:43:26 2012] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 05 12:43:26 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/ormol/usefull/captcha/index.php:0
+[Fri Oct 05 12:43:26 2012] [error] [client 127.0.0.1] PHP Warning:  imagettftext(): Could not find/open font in /home/maxim/workspace/ormol/usefull/captcha/index.php on line 74
+[Fri Oct 05 12:43:26 2012] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 05 12:43:26 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/ormol/usefull/captcha/index.php:0
+[Fri Oct 05 12:43:26 2012] [error] [client 127.0.0.1] PHP   2. Captcha->__construct() /home/maxim/workspace/ormol/usefull/captcha/index.php:95
+[Fri Oct 05 12:43:26 2012] [error] [client 127.0.0.1] PHP   3. Captcha->createImgText() /home/maxim/workspace/ormol/usefull/captcha/index.php:41
+[Fri Oct 05 12:43:26 2012] [error] [client 127.0.0.1] PHP   4. imagettftext() /home/maxim/workspace/ormol/usefull/captcha/index.php:74
+[Fri Oct 05 12:43:27 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined offset: 12 in /home/maxim/workspace/ormol/usefull/captcha/index.php on line 92
+[Fri Oct 05 12:43:27 2012] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 05 12:43:27 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/ormol/usefull/captcha/index.php:0
+[Fri Oct 05 12:43:27 2012] [error] [client 127.0.0.1] PHP Warning:  imagettftext(): Could not find/open font in /home/maxim/workspace/ormol/usefull/captcha/index.php on line 74
+[Fri Oct 05 12:43:27 2012] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 05 12:43:27 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/ormol/usefull/captcha/index.php:0
+[Fri Oct 05 12:43:27 2012] [error] [client 127.0.0.1] PHP   2. Captcha->__construct() /home/maxim/workspace/ormol/usefull/captcha/index.php:95
+[Fri Oct 05 12:43:27 2012] [error] [client 127.0.0.1] PHP   3. Captcha->createImgText() /home/maxim/workspace/ormol/usefull/captcha/index.php:41
+[Fri Oct 05 12:43:27 2012] [error] [client 127.0.0.1] PHP   4. imagettftext() /home/maxim/workspace/ormol/usefull/captcha/index.php:74
+[Fri Oct 05 12:43:51 2012] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/maxim/workspace/ormol/usefull/captcha/index.php on line 97
+[Fri Oct 05 12:43:59 2012] [error] [client 127.0.0.1] PHP Warning:  file_put_contents(file/font.txt): failed to open stream: No such file or directory in /home/maxim/workspace/ormol/usefull/captcha/index.php on line 95
+[Fri Oct 05 12:43:59 2012] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 05 12:43:59 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/ormol/usefull/captcha/index.php:0
+[Fri Oct 05 12:43:59 2012] [error] [client 127.0.0.1] PHP   2. file_put_contents() /home/maxim/workspace/ormol/usefull/captcha/index.php:95
+[Fri Oct 05 12:44:00 2012] [error] [client 127.0.0.1] PHP Warning:  file_put_contents(file/font.txt): failed to open stream: No such file or directory in /home/maxim/workspace/ormol/usefull/captcha/index.php on line 95
+[Fri Oct 05 12:44:00 2012] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 05 12:44:00 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/ormol/usefull/captcha/index.php:0
+[Fri Oct 05 12:44:00 2012] [error] [client 127.0.0.1] PHP   2. file_put_contents() /home/maxim/workspace/ormol/usefull/captcha/index.php:95
+[Fri Oct 05 12:44:00 2012] [error] [client 127.0.0.1] PHP Warning:  file_put_contents(file/font.txt): failed to open stream: No such file or directory in /home/maxim/workspace/ormol/usefull/captcha/index.php on line 95
+[Fri Oct 05 12:44:00 2012] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 05 12:44:00 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/ormol/usefull/captcha/index.php:0
+[Fri Oct 05 12:44:00 2012] [error] [client 127.0.0.1] PHP   2. file_put_contents() /home/maxim/workspace/ormol/usefull/captcha/index.php:95
+[Fri Oct 05 12:44:01 2012] [error] [client 127.0.0.1] PHP Warning:  file_put_contents(file/font.txt): failed to open stream: No such file or directory in /home/maxim/workspace/ormol/usefull/captcha/index.php on line 95
+[Fri Oct 05 12:44:01 2012] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 05 12:44:01 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/ormol/usefull/captcha/index.php:0
+[Fri Oct 05 12:44:01 2012] [error] [client 127.0.0.1] PHP   2. file_put_contents() /home/maxim/workspace/ormol/usefull/captcha/index.php:95
+[Fri Oct 05 12:44:13 2012] [error] [client 127.0.0.1] PHP Warning:  file_put_contents(/file/font.txt): failed to open stream: No such file or directory in /home/maxim/workspace/ormol/usefull/captcha/index.php on line 95
+[Fri Oct 05 12:44:13 2012] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 05 12:44:13 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/ormol/usefull/captcha/index.php:0
+[Fri Oct 05 12:44:13 2012] [error] [client 127.0.0.1] PHP   2. file_put_contents() /home/maxim/workspace/ormol/usefull/captcha/index.php:95
+[Fri Oct 05 12:44:13 2012] [error] [client 127.0.0.1] PHP Warning:  file_put_contents(/file/font.txt): failed to open stream: No such file or directory in /home/maxim/workspace/ormol/usefull/captcha/index.php on line 95
+[Fri Oct 05 12:44:13 2012] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 05 12:44:13 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/ormol/usefull/captcha/index.php:0
+[Fri Oct 05 12:44:13 2012] [error] [client 127.0.0.1] PHP   2. file_put_contents() /home/maxim/workspace/ormol/usefull/captcha/index.php:95
+[Fri Oct 05 12:44:42 2012] [error] [client 127.0.0.1] PHP Warning:  file_put_contents(/file/font.txt): failed to open stream: No such file or directory in /home/maxim/workspace/ormol/usefull/captcha/index.php on line 95
+[Fri Oct 05 12:44:42 2012] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 05 12:44:42 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/ormol/usefull/captcha/index.php:0
+[Fri Oct 05 12:44:42 2012] [error] [client 127.0.0.1] PHP   2. file_put_contents() /home/maxim/workspace/ormol/usefull/captcha/index.php:95
+[Fri Oct 05 12:44:43 2012] [error] [client 127.0.0.1] PHP Warning:  file_put_contents(/file/font.txt): failed to open stream: No such file or directory in /home/maxim/workspace/ormol/usefull/captcha/index.php on line 95
+[Fri Oct 05 12:44:43 2012] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 05 12:44:43 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/ormol/usefull/captcha/index.php:0
+[Fri Oct 05 12:44:43 2012] [error] [client 127.0.0.1] PHP   2. file_put_contents() /home/maxim/workspace/ormol/usefull/captcha/index.php:95
+[Fri Oct 05 12:45:43 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined offset: 12 in /home/maxim/workspace/ormol/usefull/captcha/index.php on line 92, referer: http://ormol.local/comment
+[Fri Oct 05 12:45:43 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://ormol.local/comment
+[Fri Oct 05 12:45:43 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/ormol/usefull/captcha/index.php:0, referer: http://ormol.local/comment
+[Fri Oct 05 12:45:43 2012] [error] [client 127.0.0.1] PHP Warning:  imagettftext(): Could not find/open font in /home/maxim/workspace/ormol/usefull/captcha/index.php on line 74, referer: http://ormol.local/comment
+[Fri Oct 05 12:45:43 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://ormol.local/comment
+[Fri Oct 05 12:45:43 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/ormol/usefull/captcha/index.php:0, referer: http://ormol.local/comment
+[Fri Oct 05 12:45:43 2012] [error] [client 127.0.0.1] PHP   2. Captcha->__construct() /home/maxim/workspace/ormol/usefull/captcha/index.php:96, referer: http://ormol.local/comment
+[Fri Oct 05 12:45:43 2012] [error] [client 127.0.0.1] PHP   3. Captcha->createImgText() /home/maxim/workspace/ormol/usefull/captcha/index.php:41, referer: http://ormol.local/comment
+[Fri Oct 05 12:45:43 2012] [error] [client 127.0.0.1] PHP   4. imagettftext() /home/maxim/workspace/ormol/usefull/captcha/index.php:74, referer: http://ormol.local/comment
+[Fri Oct 05 12:48:20 2012] [error] [client 127.0.0.1] PHP Warning:  imagettftext(): Could not find/open font in /home/maxim/workspace/ormol/usefull/captcha/index.php on line 74
+[Fri Oct 05 12:48:20 2012] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 05 12:48:20 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/ormol/usefull/captcha/index.php:0
+[Fri Oct 05 12:48:20 2012] [error] [client 127.0.0.1] PHP   2. Captcha->__construct() /home/maxim/workspace/ormol/usefull/captcha/index.php:113
+[Fri Oct 05 12:48:20 2012] [error] [client 127.0.0.1] PHP   3. Captcha->createImgText() /home/maxim/workspace/ormol/usefull/captcha/index.php:41
+[Fri Oct 05 12:48:20 2012] [error] [client 127.0.0.1] PHP   4. imagettftext() /home/maxim/workspace/ormol/usefull/captcha/index.php:74
+[Fri Oct 05 12:48:34 2012] [error] [client 127.0.0.1] PHP Warning:  imagettftext(): Could not find/open font in /home/maxim/workspace/ormol/usefull/captcha/index.php on line 74
+[Fri Oct 05 12:48:34 2012] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 05 12:48:34 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/ormol/usefull/captcha/index.php:0
+[Fri Oct 05 12:48:34 2012] [error] [client 127.0.0.1] PHP   2. Captcha->__construct() /home/maxim/workspace/ormol/usefull/captcha/index.php:113
+[Fri Oct 05 12:48:34 2012] [error] [client 127.0.0.1] PHP   3. Captcha->createImgText() /home/maxim/workspace/ormol/usefull/captcha/index.php:41
+[Fri Oct 05 12:48:34 2012] [error] [client 127.0.0.1] PHP   4. imagettftext() /home/maxim/workspace/ormol/usefull/captcha/index.php:74
+[Fri Oct 05 12:48:34 2012] [error] [client 127.0.0.1] PHP Warning:  imagettftext(): Could not find/open font in /home/maxim/workspace/ormol/usefull/captcha/index.php on line 74
+[Fri Oct 05 12:48:34 2012] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 05 12:48:34 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/ormol/usefull/captcha/index.php:0
+[Fri Oct 05 12:48:34 2012] [error] [client 127.0.0.1] PHP   2. Captcha->__construct() /home/maxim/workspace/ormol/usefull/captcha/index.php:113
+[Fri Oct 05 12:48:34 2012] [error] [client 127.0.0.1] PHP   3. Captcha->createImgText() /home/maxim/workspace/ormol/usefull/captcha/index.php:41
+[Fri Oct 05 12:48:34 2012] [error] [client 127.0.0.1] PHP   4. imagettftext() /home/maxim/workspace/ormol/usefull/captcha/index.php:74
+[Fri Oct 05 12:48:35 2012] [error] [client 127.0.0.1] PHP Warning:  imagettftext(): Could not find/open font in /home/maxim/workspace/ormol/usefull/captcha/index.php on line 74
+[Fri Oct 05 12:48:35 2012] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 05 12:48:35 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/ormol/usefull/captcha/index.php:0
+[Fri Oct 05 12:48:35 2012] [error] [client 127.0.0.1] PHP   2. Captcha->__construct() /home/maxim/workspace/ormol/usefull/captcha/index.php:113
+[Fri Oct 05 12:48:35 2012] [error] [client 127.0.0.1] PHP   3. Captcha->createImgText() /home/maxim/workspace/ormol/usefull/captcha/index.php:41
+[Fri Oct 05 12:48:35 2012] [error] [client 127.0.0.1] PHP   4. imagettftext() /home/maxim/workspace/ormol/usefull/captcha/index.php:74
+[Fri Oct 05 12:48:35 2012] [error] [client 127.0.0.1] PHP Warning:  imagettftext(): Could not find/open font in /home/maxim/workspace/ormol/usefull/captcha/index.php on line 74
+[Fri Oct 05 12:48:35 2012] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 05 12:48:35 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/ormol/usefull/captcha/index.php:0
+[Fri Oct 05 12:48:35 2012] [error] [client 127.0.0.1] PHP   2. Captcha->__construct() /home/maxim/workspace/ormol/usefull/captcha/index.php:113
+[Fri Oct 05 12:48:35 2012] [error] [client 127.0.0.1] PHP   3. Captcha->createImgText() /home/maxim/workspace/ormol/usefull/captcha/index.php:41
+[Fri Oct 05 12:48:35 2012] [error] [client 127.0.0.1] PHP   4. imagettftext() /home/maxim/workspace/ormol/usefull/captcha/index.php:74
+[Fri Oct 05 12:48:38 2012] [error] [client 127.0.0.1] PHP Warning:  imagettftext(): Could not find/open font in /home/maxim/workspace/ormol/usefull/captcha/index.php on line 74
+[Fri Oct 05 12:48:38 2012] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 05 12:48:38 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/ormol/usefull/captcha/index.php:0
+[Fri Oct 05 12:48:38 2012] [error] [client 127.0.0.1] PHP   2. Captcha->__construct() /home/maxim/workspace/ormol/usefull/captcha/index.php:113
+[Fri Oct 05 12:48:38 2012] [error] [client 127.0.0.1] PHP   3. Captcha->createImgText() /home/maxim/workspace/ormol/usefull/captcha/index.php:41
+[Fri Oct 05 12:48:38 2012] [error] [client 127.0.0.1] PHP   4. imagettftext() /home/maxim/workspace/ormol/usefull/captcha/index.php:74
+[Fri Oct 05 12:48:39 2012] [error] [client 127.0.0.1] PHP Warning:  imagettftext(): Could not find/open font in /home/maxim/workspace/ormol/usefull/captcha/index.php on line 74
+[Fri Oct 05 12:48:39 2012] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 05 12:48:39 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/ormol/usefull/captcha/index.php:0
+[Fri Oct 05 12:48:39 2012] [error] [client 127.0.0.1] PHP   2. Captcha->__construct() /home/maxim/workspace/ormol/usefull/captcha/index.php:113
+[Fri Oct 05 12:48:39 2012] [error] [client 127.0.0.1] PHP   3. Captcha->createImgText() /home/maxim/workspace/ormol/usefull/captcha/index.php:41
+[Fri Oct 05 12:48:39 2012] [error] [client 127.0.0.1] PHP   4. imagettftext() /home/maxim/workspace/ormol/usefull/captcha/index.php:74
+[Fri Oct 05 12:48:53 2012] [error] [client 127.0.0.1] PHP Warning:  imagettftext(): Could not find/open font in /home/maxim/workspace/ormol/usefull/captcha/index.php on line 74
+[Fri Oct 05 12:48:53 2012] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 05 12:48:53 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/ormol/usefull/captcha/index.php:0
+[Fri Oct 05 12:48:53 2012] [error] [client 127.0.0.1] PHP   2. Captcha->__construct() /home/maxim/workspace/ormol/usefull/captcha/index.php:113
+[Fri Oct 05 12:48:53 2012] [error] [client 127.0.0.1] PHP   3. Captcha->createImgText() /home/maxim/workspace/ormol/usefull/captcha/index.php:41
+[Fri Oct 05 12:48:53 2012] [error] [client 127.0.0.1] PHP   4. imagettftext() /home/maxim/workspace/ormol/usefull/captcha/index.php:74
+[Fri Oct 05 12:48:53 2012] [error] [client 127.0.0.1] PHP Warning:  imagettftext(): Could not find/open font in /home/maxim/workspace/ormol/usefull/captcha/index.php on line 74
+[Fri Oct 05 12:48:53 2012] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 05 12:48:53 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/ormol/usefull/captcha/index.php:0
+[Fri Oct 05 12:48:53 2012] [error] [client 127.0.0.1] PHP   2. Captcha->__construct() /home/maxim/workspace/ormol/usefull/captcha/index.php:113
+[Fri Oct 05 12:48:53 2012] [error] [client 127.0.0.1] PHP   3. Captcha->createImgText() /home/maxim/workspace/ormol/usefull/captcha/index.php:41
+[Fri Oct 05 12:48:53 2012] [error] [client 127.0.0.1] PHP   4. imagettftext() /home/maxim/workspace/ormol/usefull/captcha/index.php:74
+[Fri Oct 05 12:49:05 2012] [error] [client 127.0.0.1] PHP Warning:  imagettftext(): Could not find/open font in /home/maxim/workspace/ormol/usefull/captcha/index.php on line 74
+[Fri Oct 05 12:49:05 2012] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 05 12:49:05 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/ormol/usefull/captcha/index.php:0
+[Fri Oct 05 12:49:05 2012] [error] [client 127.0.0.1] PHP   2. Captcha->__construct() /home/maxim/workspace/ormol/usefull/captcha/index.php:113
+[Fri Oct 05 12:49:05 2012] [error] [client 127.0.0.1] PHP   3. Captcha->createImgText() /home/maxim/workspace/ormol/usefull/captcha/index.php:41
+[Fri Oct 05 12:49:05 2012] [error] [client 127.0.0.1] PHP   4. imagettftext() /home/maxim/workspace/ormol/usefull/captcha/index.php:74
+[Fri Oct 05 12:49:06 2012] [error] [client 127.0.0.1] PHP Warning:  imagettftext(): Could not find/open font in /home/maxim/workspace/ormol/usefull/captcha/index.php on line 74
+[Fri Oct 05 12:49:06 2012] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 05 12:49:06 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/ormol/usefull/captcha/index.php:0
+[Fri Oct 05 12:49:06 2012] [error] [client 127.0.0.1] PHP   2. Captcha->__construct() /home/maxim/workspace/ormol/usefull/captcha/index.php:113
+[Fri Oct 05 12:49:06 2012] [error] [client 127.0.0.1] PHP   3. Captcha->createImgText() /home/maxim/workspace/ormol/usefull/captcha/index.php:41
+[Fri Oct 05 12:49:06 2012] [error] [client 127.0.0.1] PHP   4. imagettftext() /home/maxim/workspace/ormol/usefull/captcha/index.php:74
+[Fri Oct 05 12:49:06 2012] [error] [client 127.0.0.1] PHP Warning:  imagettftext(): Could not find/open font in /home/maxim/workspace/ormol/usefull/captcha/index.php on line 74
+[Fri Oct 05 12:49:06 2012] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 05 12:49:06 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/ormol/usefull/captcha/index.php:0
+[Fri Oct 05 12:49:06 2012] [error] [client 127.0.0.1] PHP   2. Captcha->__construct() /home/maxim/workspace/ormol/usefull/captcha/index.php:113
+[Fri Oct 05 12:49:06 2012] [error] [client 127.0.0.1] PHP   3. Captcha->createImgText() /home/maxim/workspace/ormol/usefull/captcha/index.php:41
+[Fri Oct 05 12:49:06 2012] [error] [client 127.0.0.1] PHP   4. imagettftext() /home/maxim/workspace/ormol/usefull/captcha/index.php:74
+[Fri Oct 05 12:50:24 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined offset: 12 in /home/maxim/workspace/ormol/usefull/captcha/index.php on line 113
+[Fri Oct 05 12:50:24 2012] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 05 12:50:24 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/ormol/usefull/captcha/index.php:0
+[Fri Oct 05 12:50:24 2012] [error] [client 127.0.0.1] PHP Warning:  imagettftext(): Could not find/open font in /home/maxim/workspace/ormol/usefull/captcha/index.php on line 74
+[Fri Oct 05 12:50:24 2012] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 05 12:50:24 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/ormol/usefull/captcha/index.php:0
+[Fri Oct 05 12:50:24 2012] [error] [client 127.0.0.1] PHP   2. Captcha->__construct() /home/maxim/workspace/ormol/usefull/captcha/index.php:113
+[Fri Oct 05 12:50:24 2012] [error] [client 127.0.0.1] PHP   3. Captcha->createImgText() /home/maxim/workspace/ormol/usefull/captcha/index.php:41
+[Fri Oct 05 12:50:24 2012] [error] [client 127.0.0.1] PHP   4. imagettftext() /home/maxim/workspace/ormol/usefull/captcha/index.php:74
+[Fri Oct 05 12:50:25 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined offset: 12 in /home/maxim/workspace/ormol/usefull/captcha/index.php on line 113
+[Fri Oct 05 12:50:25 2012] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 05 12:50:25 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/ormol/usefull/captcha/index.php:0
+[Fri Oct 05 12:50:25 2012] [error] [client 127.0.0.1] PHP Warning:  imagettftext(): Could not find/open font in /home/maxim/workspace/ormol/usefull/captcha/index.php on line 74
+[Fri Oct 05 12:50:25 2012] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 05 12:50:25 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/ormol/usefull/captcha/index.php:0
+[Fri Oct 05 12:50:25 2012] [error] [client 127.0.0.1] PHP   2. Captcha->__construct() /home/maxim/workspace/ormol/usefull/captcha/index.php:113
+[Fri Oct 05 12:50:25 2012] [error] [client 127.0.0.1] PHP   3. Captcha->createImgText() /home/maxim/workspace/ormol/usefull/captcha/index.php:41
+[Fri Oct 05 12:50:25 2012] [error] [client 127.0.0.1] PHP   4. imagettftext() /home/maxim/workspace/ormol/usefull/captcha/index.php:74
+[Fri Oct 05 12:50:25 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined offset: 12 in /home/maxim/workspace/ormol/usefull/captcha/index.php on line 113
+[Fri Oct 05 12:50:25 2012] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 05 12:50:25 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/ormol/usefull/captcha/index.php:0
+[Fri Oct 05 12:50:25 2012] [error] [client 127.0.0.1] PHP Warning:  imagettftext(): Could not find/open font in /home/maxim/workspace/ormol/usefull/captcha/index.php on line 74
+[Fri Oct 05 12:50:25 2012] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 05 12:50:25 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/ormol/usefull/captcha/index.php:0
+[Fri Oct 05 12:50:25 2012] [error] [client 127.0.0.1] PHP   2. Captcha->__construct() /home/maxim/workspace/ormol/usefull/captcha/index.php:113
+[Fri Oct 05 12:50:25 2012] [error] [client 127.0.0.1] PHP   3. Captcha->createImgText() /home/maxim/workspace/ormol/usefull/captcha/index.php:41
+[Fri Oct 05 12:50:25 2012] [error] [client 127.0.0.1] PHP   4. imagettftext() /home/maxim/workspace/ormol/usefull/captcha/index.php:74
+[Fri Oct 05 13:04:03 2012] [error] [client 127.0.0.1] Directory index forbidden by Options directive: /home/maxim/workspace/ormol/usefull/captcha/font/
+[Fri Oct 05 13:12:16 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined variable: im in /home/maxim/workspace/ormol/usefull/captcha/index.php on line 79, referer: http://ormol.local/comment
+[Fri Oct 05 13:12:16 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://ormol.local/comment
+[Fri Oct 05 13:12:16 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/ormol/usefull/captcha/index.php:0, referer: http://ormol.local/comment
+[Fri Oct 05 13:12:16 2012] [error] [client 127.0.0.1] PHP   2. Captcha->__construct() /home/maxim/workspace/ormol/usefull/captcha/index.php:102, referer: http://ormol.local/comment
+[Fri Oct 05 13:12:16 2012] [error] [client 127.0.0.1] PHP   3. Captcha->createImgShadow() /home/maxim/workspace/ormol/usefull/captcha/index.php:41, referer: http://ormol.local/comment
+[Fri Oct 05 13:12:16 2012] [error] [client 127.0.0.1] PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, null given in /home/maxim/workspace/ormol/usefull/captcha/index.php on line 79, referer: http://ormol.local/comment
+[Fri Oct 05 13:12:16 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://ormol.local/comment
+[Fri Oct 05 13:12:16 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/ormol/usefull/captcha/index.php:0, referer: http://ormol.local/comment
+[Fri Oct 05 13:12:16 2012] [error] [client 127.0.0.1] PHP   2. Captcha->__construct() /home/maxim/workspace/ormol/usefull/captcha/index.php:102, referer: http://ormol.local/comment
+[Fri Oct 05 13:12:16 2012] [error] [client 127.0.0.1] PHP   3. Captcha->createImgShadow() /home/maxim/workspace/ormol/usefull/captcha/index.php:41, referer: http://ormol.local/comment
+[Fri Oct 05 13:12:16 2012] [error] [client 127.0.0.1] PHP   4. imagecolorallocate() /home/maxim/workspace/ormol/usefull/captcha/index.php:79, referer: http://ormol.local/comment
+[Fri Oct 05 13:12:18 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined variable: im in /home/maxim/workspace/ormol/usefull/captcha/index.php on line 79, referer: http://ormol.local/comment
+[Fri Oct 05 13:12:18 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://ormol.local/comment
+[Fri Oct 05 13:12:18 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/ormol/usefull/captcha/index.php:0, referer: http://ormol.local/comment
+[Fri Oct 05 13:12:18 2012] [error] [client 127.0.0.1] PHP   2. Captcha->__construct() /home/maxim/workspace/ormol/usefull/captcha/index.php:102, referer: http://ormol.local/comment
+[Fri Oct 05 13:12:18 2012] [error] [client 127.0.0.1] PHP   3. Captcha->createImgShadow() /home/maxim/workspace/ormol/usefull/captcha/index.php:41, referer: http://ormol.local/comment
+[Fri Oct 05 13:12:18 2012] [error] [client 127.0.0.1] PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, null given in /home/maxim/workspace/ormol/usefull/captcha/index.php on line 79, referer: http://ormol.local/comment
+[Fri Oct 05 13:12:18 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://ormol.local/comment
+[Fri Oct 05 13:12:18 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/ormol/usefull/captcha/index.php:0, referer: http://ormol.local/comment
+[Fri Oct 05 13:12:18 2012] [error] [client 127.0.0.1] PHP   2. Captcha->__construct() /home/maxim/workspace/ormol/usefull/captcha/index.php:102, referer: http://ormol.local/comment
+[Fri Oct 05 13:12:18 2012] [error] [client 127.0.0.1] PHP   3. Captcha->createImgShadow() /home/maxim/workspace/ormol/usefull/captcha/index.php:41, referer: http://ormol.local/comment
+[Fri Oct 05 13:12:18 2012] [error] [client 127.0.0.1] PHP   4. imagecolorallocate() /home/maxim/workspace/ormol/usefull/captcha/index.php:79, referer: http://ormol.local/comment

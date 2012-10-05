@@ -55,6 +55,14 @@ $(document).ready(function(){
 	});
 	//// End Scroll Top Function ////
 
+        
+        
+        
+        $('#refresh-captcha').click(function(){
+            $("img#captcha").attr('src', './usefull/captcha/'+'?rand='+Math.random());
+        })
+
+
 
 });
 

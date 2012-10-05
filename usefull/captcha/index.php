@@ -75,21 +75,11 @@ class Captcha{
     }
 }
 
-function getFilePath($folder){
-    $fullPath = NULL;
-        
-    $dir = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($folder), TRUE);
-    while($dir->valid()) {
-        if (!$dir->isDot()){
-            $fullPath[] = $dir->key();
-        }
-        $dir->next();
-    }
-        return $fullPath;
-}
-    
-$font = getFilePath('font/');
+$r = rand(0, 255);
+$g = rand(0, 255);
+$b = rand(0, 255);
 
+$font = glob('font/*.ttf');
 
-$a = new Captcha(100, 40, $font[rand(0, count($font))], array("R" => 255, "G" => 255, "B" => 255),  array("R" => 65, "G" => 10, "B" => 10));
+$a = new Captcha(100, 40, $font[rand(0, count($font)-1)], array("R" => 255, "G" => 255, "B" => 255),  array("R" => $r, "G" => $g, "B" => $b));
 $a->echoImg();

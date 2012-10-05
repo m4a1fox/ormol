@@ -1434,3 +1434,16 @@ span#error{
 .commentbutton_fieldset{
 	padding-top:0px !important;
 }
+
+
+#refresh-captcha{
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background: url(../img/reload.png) no-repeat;
+}
+
+#refresh-captcha:hover{
+    background: url(../img/reload_hover.png) no-repeat;
+}

@@ -23,8 +23,9 @@
                     <span id="error"><?php echo isset($comment) ? $comment : NULL;?></span>
                 </fieldset>
                 <fieldset>
-                    <img src="<?php echo M4A1_HOST?>usefull/captcha" style="float: left;">
+                    <img src="<?php echo M4A1_HOST?>usefull/captcha" id="captcha" name="code" style="float: left;">
                     <input type="text" name="captcha" value="" placeholder="code" style="width: 100px;" />
+                    <span id="refresh-captcha"></span>
                     <span id="error"><?php echo isset($captcha) ? $captcha: NULL;?></span>
                 </fieldset>
                 <fieldset class="commentbutton_fieldset">
@@ -35,30 +36,3 @@
         <span class="box-arrow"></span>
     </div>
 </div>
-
-
-
-
-<?php
-
-    function getFilePath($folder){
-        $fullPath = NULL;
-        
-        $dir = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($folder), TRUE);
-        while($dir->valid()) {
-
-                $fullPath[] = $dir->key();
-            
-            $dir->next();
-        }
-        return $fullPath;
-    }
-    
-    echo '<pre>'.print_r(getFilePath('./file/'), 1).'</pre>';
-
-
-    
-    echo '<pre>'.print_r(glob('./file/*.png'), 1).'</pre>';
-    echo '<pre>'.print_r(glob('./file/*.png'), 1).'</pre>';
-
-?>

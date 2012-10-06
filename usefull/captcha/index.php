@@ -45,6 +45,7 @@ class Captcha{
         header("Content-type: image/png");
         return imagepng($this->image);
     }
+
     
     function char() {
         for ($i = 0; $i < 5; $i++) {
@@ -71,7 +72,7 @@ class Captcha{
     }
     
     function createImgText() {
-        return imagettftext($this->image, 20, 10, 20, 30, $this->color, $this->font, $this->char());
+        return imagettftext($this->image, 30, 10, 20, 30, $this->color, $this->font, $this->char());
     }
 }
 
@@ -81,5 +82,5 @@ $b = rand(0, 255);
 
 $font = glob('font/*.ttf');
 
-$a = new Captcha(100, 40, $font[rand(0, count($font)-1)], array("R" => 255, "G" => 255, "B" => 255),  array("R" => $r, "G" => $g, "B" => $b));
+$a = new Captcha(100, 100, $font[rand(0, count($font)-1)], array("R" => 255, "G" => 255, "B" => 255),  array("R" => $r, "G" => $g, "B" => $b));
 $a->echoImg();

@@ -59,7 +59,8 @@ $(document).ready(function(){
         
         
         $('#refresh-captcha').click(function(){
-            $("img#captcha").attr('src', './usefull/captcha/'+'?rand='+Math.random());
+            var src = $("img#captcha").attr('src');
+            $("img#captcha").attr('src', src+'?rand='+Math.random());
         })
 
 

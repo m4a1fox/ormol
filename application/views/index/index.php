@@ -12,3 +12,14 @@
     <button data-dir="prev"></button>
     <button data-dir="next"></button>
 </div>
+
+<div>
+    <ol>
+        <li>sudo yum install imageMagick</li>
+        <li>sudo yum install php-magickwand</li>
+        <li>sudo yum install pfstools-imgmagick</li>
+        <li>sudo yum install php-pecl-imagick</li>
+        <li>sudo yum install q-magick</li>
+        <li>sudo service httpd restart</li>
+    </ol>
+</div>

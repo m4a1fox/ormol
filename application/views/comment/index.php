@@ -23,7 +23,7 @@
                     <span id="error"><?php echo isset($comment) ? $comment : NULL;?></span>
                 </fieldset>
                 <fieldset>
-                    <img src="<?php echo M4A1_HOST?>usefull/captcha" id="captcha" name="code" style="float: left;">
+                    <img src="<?php echo M4A1_HOST?>usefull/magic" id="captcha" name="code" style="float: left;">
                     <input type="text" name="captcha" value="" placeholder="code" style="width: 100px;" />
                     <span id="refresh-captcha"></span>
                     <span id="error"><?php echo isset($captcha) ? $captcha: NULL;?></span>

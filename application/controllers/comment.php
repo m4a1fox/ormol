@@ -6,10 +6,14 @@
             parent::__construct();
             $this->library('form');
             $this->model('get_db');
+            MOUNT::$JS = array('views/comment/js/comment.js');
         }
         
         public function Index(){
             $data = array();
+            
+            
+            
             
             if(isset($_POST['submit'])){
                 $ret = $this->add();
@@ -26,11 +30,9 @@
                 }
             }
             
-            
-            
-            
-            
-            $this->view('comment/index', $data);
+        $data['comments'] = $this->get_db->selectMulti('comment');
+
+        $this->view('comment/index', $data);
         }
         
         public function add(){

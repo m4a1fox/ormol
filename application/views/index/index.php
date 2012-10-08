@@ -15,11 +15,14 @@
 
 <div>
     <ol>
-        <li>sudo yum install imageMagick</li>
+        <li>sudo yum install ImageMagick</li>
         <li>sudo yum install php-magickwand</li>
         <li>sudo yum install pfstools-imgmagick</li>
         <li>sudo yum install php-pecl-imagick</li>
         <li>sudo yum install q-magick</li>
         <li>sudo service httpd restart</li>
+        <li>sudo service httpd restart</li>
     </ol>
 </div>
+
+Посмотреть как происходит сортировка в PDO->execute(). ORDER BY .... (DESC || ASC).

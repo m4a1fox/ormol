@@ -21,7 +21,6 @@
         <li>sudo yum install php-pecl-imagick</li>
         <li>sudo yum install q-magick</li>
         <li>sudo service httpd restart</li>
-        <li>sudo service httpd restart</li>
     </ol>
 </div>
 

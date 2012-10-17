@@ -8,13 +8,11 @@ class About extends Controller{
     }
     
     function Index($id=1){
-            $this->library('paginator');
-            $this->model('get_db');
-
             $config['id'] = $id;
             $config['link'] = M4A1_HOST.strtolower(__CLASS__).'/page/';
             $config['table'] = 'user';
-            $config['per_page'] = 5;
+            $config['per_page'] = 2;
+            $config['list_page'] = 4;
             $this->add();
             $this->paginator->initialize($config);
             $data['result'] = $this->paginator->getPage('', 'ORDER BY `id` DESC');

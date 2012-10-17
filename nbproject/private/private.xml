@@ -2,16 +2,13 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
-        <file>file:/home/maxim/workspace/ormol/public/css/style.css</file>
-        <file>file:/home/maxim/workspace/ormol/application/views/comment/index.php</file>
         <file>file:/home/maxim/workspace/ormol/application/controllers/comment.php</file>
-        <file>file:/home/maxim/workspace/ormol/public/js/init.js</file>
-<<<<<<< HEAD
-        <file>file:/home/maxim/workspace/ormol/public/css/style.css</file>
-        <file>file:/home/maxim/workspace/ormol/usefull/captcha/index.php</file>
-        <file>file:/home/maxim/workspace/ormol/usefull/magic/index.php</file>
-        <file>file:/home/maxim/workspace/ormol/application/views/index/index.php</file>
-=======
->>>>>>> a357466972c37f244abcb10e18478c2d49b2cef5
+        <file>file:/home/maxim/workspace/ormol/application/views/comment/index.php</file>
+        <file>file:/home/maxim/workspace/ormol/application/views/header.php</file>
+        <file>file:/home/maxim/workspace/ormol/application/views/admin/js/init.js</file>
+        <file>file:/home/maxim/workspace/ormol/application/views/admin/js/func.js</file>
+        <file>file:/home/maxim/workspace/ormol/usefull/fckeditor/fckconfig.js</file>
+        <file>file:/home/maxim/workspace/ormol/usefull/fckeditor/fckeditor.js</file>
+        <file>file:/home/maxim/workspace/ormol/usefull/fckeditor/editor/filemanager/connectors/php/config.php</file>
     </open-files>
 </project-private>

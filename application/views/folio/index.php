@@ -13,7 +13,7 @@
             <div class="title"><?php echo $value->title?><span class="titlearrow"></span></div>
             <div class="portfolioimage">
                 <a href="<?php echo $value->link;?>" rel="prettyPhoto" title="Lorem ipsum dolor sit amet">
-                    <img src="<?php echo $value->img_s;?>" alt="Lorem ipsum dolor sit amet">
+                    <img src="<?php echo M4A1_HOST.ltrim($value->img_s, './');?>" alt="Lorem ipsum dolor sit amet">
                 </a>
             </div>
             <div class="text"><?php echo $value->description;?><span class="textarrow"></span></div>

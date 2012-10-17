@@ -6,7 +6,7 @@
     if(!Session::get('login'))
         header("Location: /");
 ?>
-<span id="show-article">press me to show all articles</span>
+<span id="show-article">press me to show all articles <span class="arrow">&#9660;</span> </span>
 <div id="article">
 <?php foreach ($content as $value):?>
 <span>

@@ -30,7 +30,11 @@ class DownloadFile extends Conf{
     function initialize($param = array()){
         if(count($param) > 0){
             foreach ($param as $key => $value) {
-                $this->$key = $value;
+                if($key == 'folder'){
+                    $this->$key = '.'.DIRECTORY_SEPARATOR.$value.DIRECTORY_SEPARATOR;
+                }else{
+                    $this->$key = $value;
+                }
             }
         }
         $this->extension = pathinfo($this->image['name'], PATHINFO_EXTENSION);

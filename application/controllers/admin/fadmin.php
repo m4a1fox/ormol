@@ -14,10 +14,12 @@ class Fadmin extends Controller{
         
         if(isset($_POST['send'])){
             $config['image'] = $_FILES['file'];
-            $config['folder'] = './file/';
+            $config['folder'] = 'file/data';
             $config['smallWH'] = array(200, 200);
             $this->downloadfile->initialize($config);
             $yes = $this->downloadfile->MoveImage();
+            echo '<pre>'.print_r($yes, 1).'</pre>';
+            exit;
              $this->get_db->insert1(array(
                     'title' => $_POST['title'], 
                     'dev_time' => $_POST['dev-time'],

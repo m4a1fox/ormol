@@ -4,6 +4,7 @@ $(document).ready(function(){
     $("#article").hide();
     $("#show-article").css('cursor', 'pointer').click(function(){
         $("#article").slideToggle('slow');
+        $("#show-article").css({'border-bottom': 'none'})
     })
     
     $("input[name='link']").focus(function(){

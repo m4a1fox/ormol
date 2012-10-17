@@ -24,8 +24,7 @@
     <label>Dev. time</label><input type="text" name="dev-time" /><br />
     <label>Platform</label><input type="text" name="platform" /><br />
     <label>Link</label><input type="text" name="link" /><br />
-    <label>Description</label><input type="type" name="description" /><br />
-
+    <label>Description</label><input type="text" name="description" /><br />
     <label></label><input type="file" name="file" /><br />
     <input type="submit" name="send" value="download" />
 </form>

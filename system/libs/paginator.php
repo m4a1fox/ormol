@@ -8,6 +8,7 @@ class Paginator{
     private $table;         // The selected table
     private $countRow;      // Counting all the required rows in the table
     private $per_page       = 3;      // How many pages will be on the right and left
+    private $list_page      = 5;
     private $counts;        // Calculation of the necessary lines in the system
     private $begin;         // The beginning of the sample
     private $leftLink;
@@ -41,9 +42,9 @@ class Paginator{
         return '<div class="pagination"><ul>'.$this->fisrtPage().$this->leftLink().$this->nowPage().$this->rightLink().$this->lastPage().'</ul></div>';
     }
     
-    public function getPage($where = '', $order = ''){
+    public function getPage($where = '', $order = 'ORDER BY `id` DESC'){
         if($this->id <= $this->pageCount() && is_numeric($this->id)){
-            return Registry::get('DB')->query("SELECT * FROM `".$this->table."` ".$where." ".$order."  LIMIT ".$this->begin().", ".$this->per_page)->fetchAll(PDO::FETCH_CLASS, "stdClass");
+            return Registry::get('DB')->query("SELECT * FROM `".$this->table."` ".$where." ".$order."  LIMIT ".$this->begin().", ".$this->list_page)->fetchAll(PDO::FETCH_CLASS, "stdClass");
         }else{
             header("Location: ".$this->link);
             exit();

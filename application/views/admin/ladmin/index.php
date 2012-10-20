@@ -7,23 +7,20 @@
         header("Location: /");
 ?>
 <span id="show-article">press me to show all articles <span class="arrow">&#9660;</span> </span>
-<div id="article">
+<span id="response" style="opacity: 0;"></span>
+<ul id="article">
 <?php foreach ($content as $value):?>
-<span>
-    <?php echo $value->id?>:: 
-    <?php echo $value->title?>
-</span>
-||
-<a href="ladmin/delete/<?php echo $value->id?>" type="del">
-    [ x ]
-</a>
-||
-<a href="/ladmin/edit/<?php echo $value->id?>" type="edit">
-    [ / ]
-</a>
-<br />
+    <li  id="arrayorder_<?php echo $value->id?>"><?php echo $value->id?>:: <?php echo $value->title?>||
+        <a href="ladmin/delete/<?php echo $value->id?>" type="del">
+            <img src="<?php M4A1_HOST?>public/img/remove-btn.png">
+        </a>
+        ||
+        <a href="/ladmin/edit/<?php echo $value->id?>" type="edit">
+            <img src="<?php M4A1_HOST?>public/img/edit-btn.png">
+        </a>
+    </li>
 <?php endforeach;?>
-</div>
+</ul>
 <form action="ladmin/add" method="post" id="form-article">
     <label>Title</label><input type="text" name="title" /><br />
     <label>Link</label><input type="text" name="link" /><br />

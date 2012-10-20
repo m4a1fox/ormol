@@ -15,4 +15,32 @@ $(document).ready(function(){
         var oFCKeditor = new FCKeditor('text',/*id block*/ '812px'/*width*/, '700px'/*height*/, 'Default'/*toolbar Set*/, ''/*value*/, 'usefull'/*path to folder with fckedit*/);
         oFCKeditor.ReplaceTextarea();
     }
-})
+    
+    
+    function slideout(){
+        setTimeout(function(){
+            $("#response").css({'opacity': '0'});
+    }, 2000);}
+
+    
+
+
+    $("#article").sortable({ opacity: 0.8, cursor: 'move', update: function() {
+                var order = $(this).sortable("serialize") + '&update=update';
+                $.post("/ladmin/changePosition", order, function(theResponse){
+                    $("#response").html(theResponse);
+                    $("#response").css({'opacity': '1'});
+                    slideout();
+                });
+            }
+        });
+
+});
+
+
+
+
+
+
+
+

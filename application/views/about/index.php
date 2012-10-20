@@ -23,9 +23,6 @@
 </table>
 
 <br />
-<?php
-
-    echo $number;
-?>
+<?php  echo $number;?>
     </div>
 </div>

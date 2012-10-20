@@ -29,8 +29,8 @@ class Database extends PDO{
         return $sql->fetch(PDO::FETCH_OBJ);
     }
 
-    public function selectMulti($table){
-        $sql = $this->query("SELECT * FROM `$table` ORDER BY `id` DESC");
+    public function selectMulti($table, $order='id', $by = 'DESC'){
+        $sql = $this->query("SELECT * FROM `$table` ORDER BY `$order` $by");
         return $sql->fetchAll(PDO::FETCH_CLASS, "stdClass");
     
     }    

@@ -7,12 +7,15 @@ class Ladmin extends Controller{
         function __construct(){
             parent::__construct();
             $this->model('get_db');
-            MOUNT::$JS = array('views/admin/js/init.js', 'views/admin/js/func.js');
+            MOUNT::$JS = array(
+                'views/admin/js/init.js',
+                'views/admin/js/func.js',
+                );
         }
         
         function Index(){
             $this->add();
-            $data['content'] = $this->get_db->selectMulti('content');
+            $data['content'] = $this->get_db->selectMulti('content', 'position', 'ASC');
             $this->view('admin/ladmin/index', $data);
         }
         
@@ -56,4 +59,24 @@ class Ladmin extends Controller{
             $this->view('/admin/ladmin/edit', $data);
         }
     
+        
+        function changePosition(){
+//            dbg::showPrint($_POST);
+            $array  = $_POST['arrayorder'];
+            if ($_POST['update'] == "update"){
+                $count = 1;
+                foreach ($array as $idval) {
+                    $this->get_db->updateTable($idval, array('position'=>$count), 'content');
+                    $count ++;
+                }
+                echo 'All saved! refresh the page to see the changes';
+            }
+
+
+            
+            
+            
+        }
+        
+        
 }

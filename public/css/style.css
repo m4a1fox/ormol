@@ -826,8 +826,8 @@ form textarea{height: 200px;}
 form [type=date], [type=time]{width: 137px;}
 form input[type=submit]:hover {cursor: pointer; background: silver;}
 form br {clear: left;}
-a[type="del"]{font-weight: bold; color: red;}
-a[type="edit"]{font-weight: bold; color: green;}
+a[type="del"]{text-decoration: none;}
+a[type="edit"]{}
 
 #form-login input[type=text]{width: 200px;}
 #form-login input[type=submit]{width: 80px;}
@@ -1737,3 +1737,9 @@ span#error{
 	color:#d25809;
 	text-decoration:none;
 }
+
+#article{margin: 0px; padding: 0px; list-style: none;}
+
+#article li{width: 200px; padding: 5px 10px;}
+
+#article li:hover{background: white; cursor: pointer;}

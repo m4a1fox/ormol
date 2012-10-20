@@ -5,8 +5,8 @@
             parent::__construct();
         }
         
-        function selectMulti($table){
-            return $this->db->selectMulti($table);
+        function selectMulti($table, $order='id', $by = 'DESC'){
+            return $this->db->selectMulti($table, $order, $by);
         }
         
         function insert1($data, $table='user'){

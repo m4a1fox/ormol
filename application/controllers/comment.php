@@ -4,12 +4,12 @@
         
         public function __construct() {
             parent::__construct();
-            $this->library('form');
+            $this->library(array('form', 'paginator'));
             $this->model('get_db');
             MOUNT::$JS = array('views/comment/js/comment.js');
         }
         
-        public function Index(){
+        public function Index($id=1){
             $data = array();
             
             
@@ -30,9 +30,16 @@
                 }
             }
             
-        $data['comments'] = $this->get_db->selectMulti('comment');
+            $config['id'] = $id;
+            $config['link'] = M4A1_HOST.strtolower(__CLASS__).'/page/';
+            $config['table'] = 'comment';
+            $config['per_page'] = 2;
+            $config['list_page'] = 4;
+            $this->paginator->initialize($config);
+            $data['comments'] = $this->paginator->getPage('', 'ORDER BY `id` DESC');
+            $data['number'] = $this->paginator->paginate();
 
-        $this->view('comment/index', $data);
+            $this->view('comment/index', $data);
         }
         
         public function add(){
@@ -48,5 +55,9 @@
 
             
             return $data;
+        }
+        
+        function page($id = 1){
+            $this->index(!empty($id)?$id:1);
         }
     }

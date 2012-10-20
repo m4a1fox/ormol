@@ -21,7 +21,8 @@
     </div>
 </div>
 <?php endforeach;?>
-
+<br />
+<?php  echo $number;?>
 <div class="blogcomment">
     <div class="blogwcommentwrap2">
         <div class="blogcommentform">

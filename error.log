@@ -75,3 +75,13 @@
 [Sat Oct 06 15:52:01 2012] [error] [client 127.0.0.1] PHP Stack trace:
 [Sat Oct 06 15:52:01 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/ormol/usefull/magic/index.php:0
 [Wed Oct 17 18:03:15 2012] [error] [client 127.0.0.1] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'img' cannot be null' in /home/maxim/workspace/ormol/system/libs/database.php:15\nStack trace:\n#0 /home/maxim/workspace/ormol/system/libs/database.php(15): PDOStatement->execute(Array)\n#1 /home/maxim/workspace/ormol/application/models/get_db.php(13): Database->insert('folio', Array)\n#2 /home/maxim/workspace/ormol/application/controllers/admin/fadmin.php(29): get_db->insert1(Array, 'folio')\n#3 /home/maxim/workspace/ormol/system/libs/bootstrap.php(50): Fadmin->Index()\n#4 /home/maxim/workspace/ormol/index.php(33): Bootstrap->__construct()\n#5 {main}\n  thrown in /home/maxim/workspace/ormol/system/libs/database.php on line 15, referer: http://ormol.local/fadmin
+[Sat Oct 20 14:48:56 2012] [error] [client 127.0.0.1] PHP Fatal error:  Call to a member function initialize() on a non-object in /home/maxim/workspace/ormol/application/controllers/comment.php on line 38, referer: http://ormol.local/
+[Sat Oct 20 14:48:56 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://ormol.local/
+[Sat Oct 20 14:48:56 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/ormol/index.php:0, referer: http://ormol.local/
+[Sat Oct 20 14:48:56 2012] [error] [client 127.0.0.1] PHP   2. Bootstrap->__construct() /home/maxim/workspace/ormol/index.php:33, referer: http://ormol.local/
+[Sat Oct 20 14:48:56 2012] [error] [client 127.0.0.1] PHP   3. Comment->Index() /home/maxim/workspace/ormol/system/libs/bootstrap.php:50, referer: http://ormol.local/
+[Sat Oct 20 17:32:02 2012] [error] [client 127.0.0.1] PHP Fatal error:  Call to undefined method get_db::updataTable() in /home/maxim/workspace/ormol/application/controllers/admin/ladmin.php on line 72, referer: http://ormol.local/ladmin
+[Sat Oct 20 17:32:02 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://ormol.local/ladmin
+[Sat Oct 20 17:32:02 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/ormol/index.php:0, referer: http://ormol.local/ladmin
+[Sat Oct 20 17:32:02 2012] [error] [client 127.0.0.1] PHP   2. Bootstrap->__construct() /home/maxim/workspace/ormol/index.php:33, referer: http://ormol.local/ladmin
+[Sat Oct 20 17:32:02 2012] [error] [client 127.0.0.1] PHP   3. Ladmin->changePosition() /home/maxim/workspace/ormol/system/libs/bootstrap.php:44, referer: http://ormol.local/ladmin

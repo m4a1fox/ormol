@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="<?php echo M4A1_HOST; ?>public/css/main.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo M4A1_HOST; ?>usefull/jqueryFileTree/jqueryFileTree.css" />
     <script type="text/javascript" src="<?php echo M4A1_HOST;?>public/js/jQuery.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.js"></script>
     <script type="text/javascript" src="<?php echo M4A1_HOST;?>public/js/init.js"></script>
         <script type="text/javascript" src="<?php echo M4A1_HOST;?>public/js/slider.js"></script>
     <script src="/usefull/fckeditor/fckeditor.js" type="text/javascript"></script>
@@ -50,7 +51,6 @@
                         <li><a href="/" title="Response Home">Home</a></li>
                         <li><a href="#" title="Response Features">Features</a>
                         	<ul>
-                                    <li><a href="left-blog-post.html" title="Left Column Blog Post">structure</a></li>
                                     <?php $link = Shortlink::allLink();?>
                                     <?php foreach ($link as $value):?>
                                         <li>

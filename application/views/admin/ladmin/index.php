@@ -10,14 +10,11 @@
 <span id="response" style="opacity: 0;"></span>
 <ul id="article">
 <?php foreach ($content as $value):?>
-    <li  id="arrayorder_<?php echo $value->id?>"><?php echo $value->id?>:: <?php echo $value->title?>||
-        <a href="ladmin/delete/<?php echo $value->id?>" type="del">
-            <img src="<?php M4A1_HOST?>public/img/remove-btn.png">
-        </a>
-        ||
-        <a href="/ladmin/edit/<?php echo $value->id?>" type="edit">
-            <img src="<?php M4A1_HOST?>public/img/edit-btn.png">
-        </a>
+    <li  id="arrayorder_<?php echo $value->id?>"><?php echo $value->id?>:: <?php echo $value->title?>
+        <div id="varrow">
+            <a href="ladmin/delete/<?php echo $value->id?>" type="del"></a>
+            <a href="/ladmin/edit/<?php echo $value->id?>" type="edit"></a>
+        </div>
     </li>
 <?php endforeach;?>
 </ul>

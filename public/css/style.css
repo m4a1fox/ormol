@@ -1740,6 +1740,33 @@ span#error{
 
 #article{margin: 0px; padding: 0px; list-style: none;}
 
-#article li{width: 200px; padding: 5px 10px;}
+#article li{width: 200px; padding: 5px 10px; position: relative; border-style: inset; border: 1px solid transparent;}
 
-#article li:hover{background: white; cursor: pointer;}
+#article li:hover{background: white; cursor: pointer; border-style: inset; border: 1px solid black;}
+
+#varrow{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-left: 5px;
+    height: 29px;
+}
+
+#article li:hover > #varrow{
+    border-left: 1px solid black;
+    background: #8cb2fd;
+}
+
+#article li a{
+    width: 27px;
+    display: inline-block;
+    height: 27px;
+}
+
+
+#article li a[type="del"]{background: url('../img/remove-btn.png') no-repeat center;}
+#article li a[type="del"]:hover{background: url('../img/remove-btn_hover.png') no-repeat center;}
+#article li a[type="edit"]{background: url('../img/edit-btn.png') no-repeat center;}
+#article li a[type="edit"]:hover{background: url('../img/edit-btn_hover.png') no-repeat center;}
+

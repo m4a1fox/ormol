@@ -6,23 +6,16 @@
     <h1>Admin</h1><span></span>
 </div>
 <span id="show-article">press me to show all articles <span class="arrow">&#9660;</span></span>
-<div id="article">
+<ul id="article">
 <?php foreach ($content as $value):?>
-<span>
-    <?php echo $value->id?>:: 
-    <?php echo $value->title?>
-</span>
-||
-<a href="/admin/delete/<?php echo $value->id?>" type="del">
-    [ x ]
-</a>
-||
-<a href="/admin/edit/<?php echo $value->id?>" type="edit">
-    [ / ]
-</a>
-<br />
+    <li  id="arrayorder_<?php echo $value->id?>"><?php echo $value->id?>:: <?php echo $value->title?>
+        <div id="varrow">
+        <a href="/fadmin/delete/<?php echo $value->id?>" type="del"></a>
+        <a href="/fadmin/edit/<?php echo $value->id?>" type="edit"></a>
+        </div>
+    </li>
 <?php endforeach;?>
-</div>
+</ul>
 <form action="/admin/add" method="post" id="form-article">
     <label>Title</label><input type="text" name="title" /><br />
     <label>Link</label><input type="text" name="link" /><br />

@@ -1,9 +1,9 @@
 -- phpMyAdmin SQL Dump
--- version 3.5.2.2
+-- version 3.5.3
 -- http://www.phpmyadmin.net
 --
 -- Хост: localhost
--- Время создания: Окт 20 2012 г., 17:59
+-- Время создания: Ноя 03 2012 г., 14:02
 -- Версия сервера: 5.5.25a
 -- Версия PHP: 5.3.15
 
@@ -52,22 +52,7 @@ CREATE TABLE IF NOT EXISTS `comment` (
   `comment` text NOT NULL,
   `date` date NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=15 ;
-
---
--- Дамп данных таблицы `comment`
---
-
-INSERT INTO `comment` (`id`, `name`, `comment`, `date`) VALUES
-(6, 'asdf', 'asdfasdf', '2012-10-03'),
-(7, 'Maxim', 'Hi to you', '2012-10-03'),
-(8, 'asdfasd', 'asdfasdf', '2012-10-04'),
-(9, 'asdf', 'asdfasdf', '2012-10-04'),
-(10, '111111111111', '123123123', '2012-10-04'),
-(11, '222', '22222', '2012-10-05'),
-(12, '999999999999', '999999999999999', '2012-10-06'),
-(13, '7777777777777777777777777777777777', '777777777777777777777777777777777777777 asd7fasdf asdf afds adsf adsf ads\r\nf adsf\r\n asdf a777777777777777777777777777777777777777 asd7fasdf asdf afds adsf adsf ads\r\nf adsf\r\n asdf a777777777777777777777777777777777777777 asd7fasdf asdf afds adsf adsf ads\r\nf adsf\r\n asdf a777777777777777777777777777777777777777 asd7fasdf asdf afds adsf adsf ads\r\nf adsf\r\n asdf a', '2012-10-20'),
-(14, 'qw34rsdf ', '999999999999: asdfasdf asdf adsf adsf', '2012-10-20');
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=19 ;
 
 -- --------------------------------------------------------
 
@@ -115,16 +100,14 @@ CREATE TABLE IF NOT EXISTS `folio` (
   `img` tinytext CHARACTER SET utf8 NOT NULL,
   `img_s` tinytext CHARACTER SET utf8 NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=26 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
 -- Дамп данных таблицы `folio`
 --
 
 INSERT INTO `folio` (`id`, `title`, `dev_time`, `platform`, `link`, `description`, `img`, `img_s`) VALUES
-(3, 'CUMC', '2 month', 'Wordpress', 'cumc', 'Department of Obstetrics and Gynecology', './file/GLKmRT2zf7.png', './file/GLKmRT2zf7_s.png'),
-(24, '1', '11', '1', '1', '1', './file/LJF5QMglZt.png', './file/LJF5QMglZt_s.png'),
-(25, '8', '8', '8', '8', '8', './file/data/qB7RdM0Ta6.png', './file/data/qB7RdM0Ta6_s.png');
+(3, 'CUMC', '2 month', 'Wordpress', 'cumc', 'Department of Obstetrics and Gynecology', './file/GLKmRT2zf7.png', './file/GLKmRT2zf7_s.png');
 
 -- --------------------------------------------------------
 

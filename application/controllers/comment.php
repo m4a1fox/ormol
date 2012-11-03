@@ -10,25 +10,14 @@
         }
         
         public function Index($id=1){
-            $data = array();
             
             
             
             
-            if(isset($_POST['submit'])){
-                $ret = $this->add();
-                if(isset($ret['error'])){
-                    foreach ($ret as $key => $value) {
-                        $data[$key] = $value;
-                    }
-                }else{
-                    $this->get_db->insert1(array(
-                        'name' => $ret['name'],
-                        'comment' => $ret['comment'],
-                        'date' => $ret['date']),
-                            'comment');
-                }
-            }
+            
+           
+            $data = $this->add(); 
+            
             
             $config['id'] = $id;
             $config['link'] = M4A1_HOST.strtolower(__CLASS__).'/page/';
@@ -43,6 +32,12 @@
         }
         
         public function add(){
+            
+            
+            
+            $val = array();
+            if(isset($_POST['submit'])){
+                
             $data = $this->form->post('name')
                                ->val('required', 'name')
                                ->post('comment')
@@ -51,13 +46,39 @@
                                ->post('captcha')
                                ->val('captcha');
             
-            $data = $data->submit() == 1 ? $data->fetch() : $data->submit();
-
+            $ret = $data->submit() == 1 ? $data->fetch() : $data->submit();
             
-            return $data;
+            Session::set('name', $_POST['name']);
+            Session::set('comment', $_POST['comment']);
+            
+            
+            if(isset($ret['error'])){
+                    foreach ($ret as $key => $value) {
+                        $val[$key] = $value;
+                    }
+                return $val;
+            }else{
+                    $this->get_db->insert1(array(
+                        'name' => $ret['name'],
+                        'comment' => $ret['comment'],
+                        'date' => $ret['date']),
+                            'comment');
+                    Session::destroy();
+                    header("Location: /comment");
+                }
+            }
         }
+        
+        
         
         function page($id = 1){
             $this->index(!empty($id)?$id:1);
         }
+        
+        
+        function removeComment(){
+            $id = $_POST['id'];
+            $this->get_db->delete1(array('id'=>$id), 'comment');
+        }
+        
     }

@@ -85,3 +85,9 @@
 [Sat Oct 20 17:32:02 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/ormol/index.php:0, referer: http://ormol.local/ladmin
 [Sat Oct 20 17:32:02 2012] [error] [client 127.0.0.1] PHP   2. Bootstrap->__construct() /home/maxim/workspace/ormol/index.php:33, referer: http://ormol.local/ladmin
 [Sat Oct 20 17:32:02 2012] [error] [client 127.0.0.1] PHP   3. Ladmin->changePosition() /home/maxim/workspace/ormol/system/libs/bootstrap.php:44, referer: http://ormol.local/ladmin
+[Fri Oct 26 16:30:56 2012] [error] [client 127.0.0.1] PHP Fatal error:  Cannot use object of type Form as array in /home/maxim/workspace/ormol/application/controllers/comment.php on line 49, referer: http://ormol.local/comment
+[Fri Oct 26 16:30:56 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://ormol.local/comment
+[Fri Oct 26 16:30:56 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/ormol/index.php:0, referer: http://ormol.local/comment
+[Fri Oct 26 16:30:56 2012] [error] [client 127.0.0.1] PHP   2. Bootstrap->__construct() /home/maxim/workspace/ormol/index.php:33, referer: http://ormol.local/comment
+[Fri Oct 26 16:30:56 2012] [error] [client 127.0.0.1] PHP   3. Comment->Index() /home/maxim/workspace/ormol/system/libs/bootstrap.php:50, referer: http://ormol.local/comment
+[Fri Oct 26 16:30:56 2012] [error] [client 127.0.0.1] PHP   4. Comment->add() /home/maxim/workspace/ormol/application/controllers/comment.php:19, referer: http://ormol.local/comment

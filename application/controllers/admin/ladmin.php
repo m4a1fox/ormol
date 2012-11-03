@@ -61,7 +61,6 @@ class Ladmin extends Controller{
     
         
         function changePosition(){
-//            dbg::showPrint($_POST);
             $array  = $_POST['arrayorder'];
             if ($_POST['update'] == "update"){
                 $count = 1;

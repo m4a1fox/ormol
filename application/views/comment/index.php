@@ -4,13 +4,16 @@
 </div>
 <div class="leftsection">
 <?php foreach ($comments as $val):?>
-<div class="blogcomment">
+    <div class="blogcomment" id="comment_<?php echo $val->id;?>">
     <div class="blogwcommentwrap">
         <div class="commenttitle">
             <p>
                 <span class="avatarname"><?php echo $val->name;?></span>
                 <span class="avatardate">On: <span class="avatardateorange"><?php echo $val->date;?></span></span>
                 <span class="avatarreply"><a href="#" title="reply">Reply</a></span>
+                <?php if(Session::get('login')):?>
+                <span style="float:right; margin-top: 2px;"><a href="#" title="remove" class="red-cross remove" data-id="<?php echo $val->id;?>"></a></span>
+                <?php endif;?>
             </p>
         </div>
         <div class="commentuser"><img src="<?php echo M4A1_HOST;?>public/img/avatar.jpg" alt="John Doe"></div>
@@ -28,12 +31,12 @@
         <div class="blogcommentform">
             <form action="" method="post" name="comment">
                 <fieldset>
-                    <input type="text" name="name" placeholder="Имя" />
+                    <input type="text" name="name" placeholder="Имя" value="<?php echo Session::get('name');?>" />
                     <input type="hidden" name="date" value="<?php echo date("Y-m-d");?>" />
                     <span id="error"><?php echo isset($name) ? $name : NULL;?></span>
                 </fieldset>
                 <fieldset>
-                    <textarea name="comment" cols="5" rows="5" placeholder="Текст"></textarea>
+                    <textarea name="comment" cols="5" rows="5" placeholder="Текст"><?php echo Session::get('comment');?></textarea>
                     <span id="error"><?php echo isset($comment) ? $comment : NULL;?></span>
                 </fieldset>
                 <fieldset>

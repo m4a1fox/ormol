@@ -2,14 +2,12 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
-        <file>file:/home/maxim/workspace/ormol/application/views/admin/ladmin/index.php</file>
-        <file>file:/home/maxim/workspace/ormol/public/css/style.css</file>
-        <file>file:/home/maxim/workspace/ormol/application/controllers/admin/ladmin.php</file>
-        <file>file:/home/maxim/workspace/ormol/system/libs/database.php</file>
-        <file>file:/home/maxim/workspace/ormol/application/models/get_db.php</file>
+        <file>file:/home/maxim/workspace/ormol/application/views/comment/index.php</file>
+        <file>file:/home/maxim/workspace/ormol/application/controllers/comment.php</file>
+        <file>file:/home/maxim/workspace/ormol/application/views/comment/js/comment.js</file>
+        <file>file:/home/maxim/workspace/ormol/application/views/admin/editor/index.php</file>
         <file>file:/home/maxim/workspace/ormol/application/views/admin/js/init.js</file>
-        <file>file:/home/maxim/workspace/ormol/application/views/header.php</file>
-        <file>file:/home/maxim/workspace/ormol/application/models/shortlink.php</file>
-        <file>file:/home/maxim/workspace/ormol/application/views/admin/fadmin/index.php</file>
+        <file>file:/home/maxim/workspace/ormol/application/models/get_db.php</file>
+        <file>file:/home/maxim/workspace/ormol/system/libs/database.php</file>
     </open-files>
 </project-private>

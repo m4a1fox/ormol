@@ -33,7 +33,7 @@ class Paginator{
     }
 
     function begin(){
-        return ($this->id-1)*$this->per_page;
+        return ($this->id-1)*$this->list_page;
     }
     
     
